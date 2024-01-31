@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="QueueTest" tests="32" skipped="0" failures="0" errors="0" timestamp="2024-01-31T21:39:17" hostname="DESKTOP-3NNFT77" time="0.066">
+  <properties/>
+  <testcase name="front_InHoldingStateWithLoopAround_ReturnsCorrectValues()" classname="QueueTest" time="0.027"/>
+  <testcase name="queue_CopyConstructorWithLoopAround_CreatesCorrectCopyQueue()" classname="QueueTest" time="0.001"/>
+  <testcase name="enqueue_InEmptyState_UpdatesSize()" classname="QueueTest" time="0.002"/>
+  <testcase name="front_InHoldingState_ReturnsCorrectValues()" classname="QueueTest" time="0.001"/>
+  <testcase name="empty_InEmptyState_ReturnsTrue()" classname="QueueTest" time="0.0"/>
+  <testcase name="enqueue_InFullStateWithLoopAround_UpdatesSizeCapacityAndCopiesValues()" classname="QueueTest" time="0.0"/>
+  <testcase name="enqueue_InHoldingState_UpdatesSize()" classname="QueueTest" time="0.001"/>
+  <testcase name="front_InHoldingState_DoesNotChangeSize()" classname="QueueTest" time="0.001"/>
+  <testcase name="dequeue_InHoldingState_ReturnsCorrectValues()" classname="QueueTest" time="0.0"/>
+  <testcase name="dequeue_InHodlingStateWithLoopAround_ReturnsCorrectValues()" classname="QueueTest" time="0.001"/>
+  <testcase name="queue_CopyConstructor_CreatesCorrectCopyQueue()" classname="QueueTest" time="0.001"/>
+  <testcase name="dequeue_InEmptyState_ThrowsEmptyQueueException()" classname="QueueTest" time="0.003"/>
+  <testcase name="full_InFullState_ReturnsTrue()" classname="QueueTest" time="0.0"/>
+  <testcase name="queue_NoArgConstructor_HasDefaultCapacity10()" classname="QueueTest" time="0.001"/>
+  <testcase name="front_InEmptyState_ThrowsEmptyQueueException()" classname="QueueTest" time="0.001"/>
+  <testcase name="full_InFullState_MultipleExpansionsReturnsCorrectBoolean()" classname="QueueTest" time="0.001"/>
+  <testcase name="queue_WithCapacityArg8_HasCapacity8()" classname="QueueTest" time="0.001"/>
+  <testcase name="full_InEmptyState_ReturnsFalse()" classname="QueueTest" time="0.0"/>
+  <testcase name="queue_NoArgConstructor_InEmptyState()" classname="QueueTest" time="0.0"/>
+  <testcase name="dequeue_InHoldingState_UpdatesSize()" classname="QueueTest" time="0.0"/>
+  <testcase name="full_OnNewlyConstructedQueue_ReturnsFalse()" classname="QueueTest" time="0.0"/>
+  <testcase name="full_InHoldingStateWithLoopAround_ReturnsFalse()" classname="QueueTest" time="0.0"/>
+  <testcase name="enqueue_InFullState_UpdatesSizeCapacityAndCopiesValues()" classname="QueueTest" time="0.0"/>
+  <testcase name="full_InHoldingState_ReturnsFalse()" classname="QueueTest" time="0.001"/>
+  <testcase name="full_InFullStateWithLoopAround_ReturnsTrue()" classname="QueueTest" time="0.001"/>
+  <testcase name="empty_InHoldingStateWithLoopAround_ReturnsFalse()" classname="QueueTest" time="0.001"/>
+  <testcase name="empty_InHoldingState_ReturnsFalse()" classname="QueueTest" time="0.001"/>
+  <testcase name="queue_ArgConstructor_InEmptyState()" classname="QueueTest" time="0.001"/>
+  <testcase name="empty_InFullState_ReturnsFalse()" classname="QueueTest" time="0.001"/>
+  <testcase name="enqueue_InFullState_MultipleExpansionsUpdatesSizeAndCapacity()" classname="QueueTest" time="0.0"/>
+  <testcase name="empty_InEmptyStateAfterLoopAround_ReturnsTrue()" classname="QueueTest" time="0.0"/>
+  <testcase name="empty_OnNewlyConstructedQueue_ReturnsTrue()" classname="QueueTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

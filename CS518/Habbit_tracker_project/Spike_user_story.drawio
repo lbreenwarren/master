@@ -1,0 +1,40 @@
+<mxfile host="app.diagrams.net" modified="2024-01-31T17:57:02.123Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="mrMuiFZVMCdjFXH2Vygt" version="23.1.0" type="device">
+  <diagram name="Page-1" id="I8m9ry8eWAKmLfDZ24Sj">
+    <mxGraphModel dx="794" dy="412" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="AlknYFHcZWCSjpH6jykR-5" value="" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="50" y="80" width="160" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="AlknYFHcZWCSjpH6jykR-6" value="Add new Habit" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="100" y="120" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="AlknYFHcZWCSjpH6jykR-9" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="AlknYFHcZWCSjpH6jykR-7" target="AlknYFHcZWCSjpH6jykR-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="AlknYFHcZWCSjpH6jykR-7" value="View Habits" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="100" y="170" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="AlknYFHcZWCSjpH6jykR-8" value="" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="270" y="80" width="150" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="AlknYFHcZWCSjpH6jykR-10" value="Add New Entry" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="302.5" y="170" width="85" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="AlknYFHcZWCSjpH6jykR-12" value="**Graphical&lt;br&gt;Display of Data**" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="307.5" y="90" width="75" height="75" as="geometry" />
+        </mxCell>
+        <mxCell id="AlknYFHcZWCSjpH6jykR-16" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="AlknYFHcZWCSjpH6jykR-13" target="AlknYFHcZWCSjpH6jykR-15">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="AlknYFHcZWCSjpH6jykR-13" value="Export Data" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="310" y="210" width="70" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="AlknYFHcZWCSjpH6jykR-15" value="Habit.json" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="460" y="205" width="85" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
