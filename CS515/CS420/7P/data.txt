@@ -1,6 +1,0 @@
-Alaska.txt
-NorthernCanada.txt
-NorthWest.txt
-InterMountain.txt
-Central.txt
-NorthEast.txt
