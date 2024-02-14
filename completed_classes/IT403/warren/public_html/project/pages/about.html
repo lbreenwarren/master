@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>About</title>
+</head>
+<body>
+    <header><h1>Welcome!</h1></header>
+    <img id="mysystem" src="../images/IMG_7852.png" alt="My System">
+    <p>My name is Liam and this is my blog where I share all things synth in my life. You can expect to see...</p>
+        <ul>
+            <li>Patches I Make</li>
+            <li>Product Reviews</li>
+            <li>Opinion Pieces</li>
+            <li>Whatever Else I Happen to be Doing With Synthesizers</li>
+        </ul>
+    
+    <table id="about">
+        <caption><h2>Modules in My System Listed by Manufacturer, Along With They're Basic Function</h2></caption>
+        <thead>
+          <tr>
+            <th scope="col" colspan="2">Make Noise</th>
+            <th scope="col" colspan="2">Mutable Instruments</th>
+            <th scope="col" colspan="2">4ms</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>"Maths"</td>
+            <td>Tool Box*</td>
+            <td rowspan="2">"Ripples"</td>
+            <td rowspan="2">Voltage Controlled Filter</td>
+            <td rowspan="4">"Quad Pingable LFO"</td>
+            <td rowspan="4">Four Channel LFO</td>
+          </tr>
+          <tr>
+            <td>"Rene"</td>
+            <td>Cartesian Sequencer</td>
+          </tr>
+          <tr>
+            <td>"STO"</td>
+            <td>Oscillator</td>
+            <td rowspan="2">"Veils"</td>
+            <td rowspan="2">Voltage Controlled Amplifier</td>
+          </tr>
+          <tr>
+            <td>"Tempi"</td>
+            <td>Rotating Clock Divider</td>
+          </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="6">*Maths can do literally anything that these other modules can do with some encouragement, see my blog post on it in module reviews for more info</td> 
+            </tr>
+        </tfoot>
+        </table>
+    
+    <p>Links to manufacturer's websites</p>
+    <ul>
+        <li><a href="https://www.makenoisemusic.com/"> Make Noise</a></li>
+        <li>
+            Mutable Instruments - Sadly mutable instruments had to shut its doors in december of 2022, after over 10 years of being one of the most innovative manufacturers not just in eurorack but in all of synthesis.
+            Fortunately for us all however, Mutable Instrument throughout its lifetime was a pioneer in open source synthesizer design and all of their module design and documentation can be freely accessed for third party
+            manufacturers and DIY synth enthusiasts alike. A Github page with all of their module designs can be found <a href="https://pichenettes.github.io/mutable-instruments-documentation/"> here</a>
+        </li>
+        <li><a href="https://4mscompany.com/">4ms</a></li>
+    </ul>
+
+    <h1>What is a Modular Synth?</h1>
+    <p>A modular synth is a type of synthesizer that is designed as to use different components possibly from different manufacturers
+        in order to achieve a wider variety of possibilities. There are many different types of modular synth, the focus of this blog will be 
+        on the most popular form, <strong>Eurorack</strong>, which is a standardization of size &amp; interoperability in this particular subset of modular synths
+    </p>
+    
+    <h1>How do modular synths work?</h1>
+    <p>The functionality of modular synths take inspiration from the earliest synths back in the 1970's and function using patch cables. 
+        Today the idea of a synthesizer in most peoples head includes a keyboard with a series of knobs and buttons which change the sound of the keyboard.
+        In the case of keyboard synths, all of the connections between the various components that make up the synthesizer are hard wired beneath the face of the synth.
+        In the case of modular synths, the manufacturers give us access to these connections to send signal to other components which would not normally be possible in a hard wired synth, 
+        which allows for more creativity and freedom in making music. 
+    </p>
+    
+    <h1>Wow, thats a lot of cables, whats going through them?</h1>
+    <p>There are two types of signals which travel through the patch cable in a synthesizer, both in the form of voltage. The first is <em>audio</em>, which is an electrical signal that is
+        oscillating at an audible rate. The second is <em>control voltage</em>, which can take the form of pulses, oscillations, or envelopes. The only difference between these 
+        two types of signal is the frequency and its purpose. An audio signal is what is actually sent to the speakers for the user/audience to hear and control voltage is used to modulate
+        other signals, such as a filter (A filter which filters out high or low frequencies of audio) which can be modulated with control voltage to go from off to fully on at a rate determined by the control voltage.
+        A good way to think of control voltage is to think of it as invisible fingers, in the same way one would slowly turn a knob to have some effect on the sound, control voltage can do the same thing
+        automatically.
+    </p>
+    <h1>A Warning</h1>
+    <p>Like many of the best hobbies in life, synthesizers can be very expensive, Ive spent &gt; 1500 Dollars on my system,
+        which would be considered to be a small one, so things can get out of hand pretty fast.</p>
+    
+    <nav>
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../pages/PatchNotes.html">Patch Notes</a></li>
+            <li><a href="../pages/patches.html">Patches</a></li>
+            <li><a href="../pages/moduleReviews.html">Module Reviews</a></li>
+            <li><a href="../pages/recommendations.html">Music Recommendations </a></li>
+            <li><a id="current" href="../pages/about.html">About</a></li>
+            <li><a href="../pages/emailsignup.html">Email List</a></li>
+        </ul>
+    </nav>
+</body>
+</html>

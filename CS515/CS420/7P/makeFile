@@ -1,0 +1,4 @@
+All: equake
+
+equake: equake.c equakeFunctions.c equake.h
+	gcc equake.c equakeFunctions.c -o equake
