@@ -1,0 +1,418 @@
+++++++++ Map Tests ++++++++
+> Task :clean
+> Task :compileJava
+> Task :processResources NO-SOURCE
+> Task :classes
+> Task :jar
+> Task :assemble
+> Task :compileTestJava
+> Task :processTestResources NO-SOURCE
+> Task :testClasses
+
+> Task :test
+
+MapTest
+
+  Test getThenInsertOnEmptyMapProperlySetsValueAndSizeIsOne() PASSED
+  Test eraseOfMissingKeyReturnsFalseAndSizeRemainsSame() PASSED
+  Test constructorCreatesZeroSizeMap() PASSED
+  Test cloneMakesSeparateCopy() PASSED
+  Test cloneMakesCorrectSize() PASSED
+  Test eraseOfExistingKeyReturnsTrueAndDecrementsSize() PASSED
+  Test copyConstructorMakesSeparateCopy() PASSED
+  Test insertWhileEmptyReturnsTrueAndMapSizeIsOne() PASSED
+  Test copyConstructorMakesCorrectSize() PASSED
+  Test eraseOnEmptyMapReturnsFalseAndSizeRemainsZero() PASSED
+  Test cloneWithManyItemsHasCorrectValues() PASSED
+  Test getThenInsertOnMissingKeyProperlySetsValueAndIncrementsSize() PASSED
+  Test getOfExistingKeyReturnsProperValueAndSizeIsSame() PASSED
+  Test insertOfSameKeyReturnsFalseAndMapSizeRemainsSame() PASSED
+
+SUCCESS: Executed 14 tests in 1.2s
+
+
+> Task :check
+> Task :build
+
+BUILD SUCCESSFUL in 2s
+5 actionable tasks: 5 executed
+
+++++++++ Broken 1 Tests ++++++++
+
+> Task :clean
+> Task :compileJava
+> Task :processResources NO-SOURCE
+> Task :classes
+> Task :jar
+> Task :assemble
+> Task :compileTestJava
+> Task :processTestResources NO-SOURCE
+> Task :testClasses
+
+> Task :test FAILED
+
+MapTest
+
+  Test getThenInsertOnEmptyMapProperlySetsValueAndSizeIsOne() PASSED
+  Test eraseOfMissingKeyReturnsFalseAndSizeRemainsSame() PASSED
+  Test constructorCreatesZeroSizeMap() PASSED
+  Test cloneMakesSeparateCopy() FAILED
+
+  org.opentest4j.AssertionFailedError: expected: <1> but was: <2>
+      at app//MapTest.cloneMakesSeparateCopy(MapTest.java:196)
+
+  Test cloneMakesCorrectSize() PASSED
+  Test eraseOfExistingKeyReturnsTrueAndDecrementsSize() FAILED
+
+  org.opentest4j.AssertionFailedError: expected: <1> but was: <2>
+      at app//MapTest.eraseOfExistingKeyReturnsTrueAndDecrementsSize(MapTest.java:134)
+
+  Test copyConstructorMakesSeparateCopy() FAILED
+
+  org.opentest4j.AssertionFailedError: expected: <1> but was: <2>
+      at app//MapTest.copyConstructorMakesSeparateCopy(MapTest.java:56)
+
+  Test insertWhileEmptyReturnsTrueAndMapSizeIsOne() PASSED
+  Test copyConstructorMakesCorrectSize() PASSED
+  Test eraseOnEmptyMapReturnsFalseAndSizeRemainsZero() PASSED
+  Test cloneWithManyItemsHasCorrectValues() FAILED
+
+  org.opentest4j.AssertionFailedError: expected: <50> but was: <null>
+      at app//MapTest.cloneWithManyItemsHasCorrectValues(MapTest.java:225)
+
+  Test getThenInsertOnMissingKeyProperlySetsValueAndIncrementsSize() PASSED
+  Test getOfExistingKeyReturnsProperValueAndSizeIsSame() PASSED
+  Test insertOfSameKeyReturnsFalseAndMapSizeRemainsSame() PASSED
+
+FAILURE: Executed 14 tests in 1.1s (4 failed)
+
+
+14 tests completed, 4 failed
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':test'.
+> There were failing tests. See the report at: file:///home/mbkulik/School/cs515/cs515-java/assignments/2P-JUnitTestMap/build/reports/tests/test/index.html
+
+* Try:
+> Run with --stacktrace option to get the stack trace.
+> Run with --info or --debug option to get more log output.
+> Run with --scan to get full insights.
+
+* Get more help at https://help.gradle.org
+
+BUILD FAILED in 2s
+5 actionable tasks: 5 executed
+
+++++++++ Broken 2 Tests ++++++++
+
+> Task :clean
+> Task :compileJava
+> Task :processResources NO-SOURCE
+> Task :classes
+> Task :jar
+> Task :assemble
+> Task :compileTestJava
+> Task :processTestResources NO-SOURCE
+> Task :testClasses
+
+> Task :test FAILED
+
+MapTest
+
+  Test getThenInsertOnEmptyMapProperlySetsValueAndSizeIsOne() FAILED
+
+  org.opentest4j.AssertionFailedError: expected: <1> but was: <2>
+      at app//MapTest.getThenInsertOnEmptyMapProperlySetsValueAndSizeIsOne(MapTest.java:105)
+
+  Test eraseOfMissingKeyReturnsFalseAndSizeRemainsSame() FAILED
+
+  org.opentest4j.AssertionFailedError: expected: <2> but was: <3>
+      at app//MapTest.eraseOfMissingKeyReturnsFalseAndSizeRemainsSame(MapTest.java:155)
+
+  Test constructorCreatesZeroSizeMap() FAILED
+
+  org.opentest4j.AssertionFailedError: expected: <0> but was: <1>
+      at app//MapTest.constructorCreatesZeroSizeMap(MapTest.java:13)
+
+  Test cloneMakesSeparateCopy() FAILED
+
+  org.opentest4j.AssertionFailedError: expected: <1> but was: <2>
+      at app//MapTest.cloneMakesSeparateCopy(MapTest.java:196)
+
+  Test cloneMakesCorrectSize() FAILED
+
+  org.opentest4j.AssertionFailedError: expected: <3> but was: <4>
+      at app//MapTest.cloneMakesCorrectSize(MapTest.java:176)
+
+  Test eraseOfExistingKeyReturnsTrueAndDecrementsSize() FAILED
+
+  org.opentest4j.AssertionFailedError: expected: <2> but was: <3>
+      at app//MapTest.eraseOfExistingKeyReturnsTrueAndDecrementsSize(MapTest.java:132)
+
+  Test copyConstructorMakesSeparateCopy() FAILED
+
+  org.opentest4j.AssertionFailedError: expected: <1> but was: <2>
+      at app//MapTest.copyConstructorMakesSeparateCopy(MapTest.java:56)
+
+  Test insertWhileEmptyReturnsTrueAndMapSizeIsOne() FAILED
+
+  org.opentest4j.AssertionFailedError: expected: <1> but was: <2>
+      at app//MapTest.insertWhileEmptyReturnsTrueAndMapSizeIsOne(MapTest.java:23)
+
+  Test copyConstructorMakesCorrectSize() FAILED
+
+  org.opentest4j.AssertionFailedError: expected: <2> but was: <3>
+      at app//MapTest.copyConstructorMakesCorrectSize(MapTest.java:37)
+
+  Test eraseOnEmptyMapReturnsFalseAndSizeRemainsZero() FAILED
+
+  org.opentest4j.AssertionFailedError: expected: <0> but was: <1>
+      at app//MapTest.eraseOnEmptyMapReturnsFalseAndSizeRemainsZero(MapTest.java:144)
+
+  Test cloneWithManyItemsHasCorrectValues() FAILED
+
+  org.opentest4j.AssertionFailedError: expected: <1050> but was: <1051>
+      at app//MapTest.cloneWithManyItemsHasCorrectValues(MapTest.java:218)
+
+  Test getThenInsertOnMissingKeyProperlySetsValueAndIncrementsSize() FAILED
+
+  org.opentest4j.AssertionFailedError: expected: <2> but was: <3>
+      at app//MapTest.getThenInsertOnMissingKeyProperlySetsValueAndIncrementsSize(MapTest.java:117)
+
+  Test getOfExistingKeyReturnsProperValueAndSizeIsSame() FAILED
+
+  org.opentest4j.AssertionFailedError: expected: <3> but was: <4>
+      at app//MapTest.getOfExistingKeyReturnsProperValueAndSizeIsSame(MapTest.java:89)
+
+  Test insertOfSameKeyReturnsFalseAndMapSizeRemainsSame() FAILED
+
+  org.opentest4j.AssertionFailedError: expected: <2> but was: <3>
+      at app//MapTest.insertOfSameKeyReturnsFalseAndMapSizeRemainsSame(MapTest.java:71)
+
+
+FAILURE: Executed 14 tests in 1.1s (14 failed)
+
+
+14 tests completed, 14 failed
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':test'.
+> There were failing tests. See the report at: file:///home/mbkulik/School/cs515/cs515-java/assignments/2P-JUnitTestMap/build/reports/tests/test/index.html
+
+* Try:
+> Run with --stacktrace option to get the stack trace.
+> Run with --info or --debug option to get more log output.
+> Run with --scan to get full insights.
+
+* Get more help at https://help.gradle.org
+
+BUILD FAILED in 2s
+5 actionable tasks: 5 executed
+
+++++++++ Broken 3 Tests ++++++++
+
+> Task :clean
+> Task :compileJava
+> Task :processResources NO-SOURCE
+> Task :classes
+> Task :jar
+> Task :assemble
+> Task :compileTestJava
+> Task :processTestResources NO-SOURCE
+> Task :testClasses
+
+> Task :test FAILED
+
+MapTest
+
+  Test getThenInsertOnEmptyMapProperlySetsValueAndSizeIsOne() PASSED
+  Test eraseOfMissingKeyReturnsFalseAndSizeRemainsSame() FAILED
+
+  org.opentest4j.AssertionFailedError: expected: <false> but was: <true>
+      at app//MapTest.eraseOfMissingKeyReturnsFalseAndSizeRemainsSame(MapTest.java:156)
+
+  Test constructorCreatesZeroSizeMap() PASSED
+  Test cloneMakesSeparateCopy() PASSED
+  Test cloneMakesCorrectSize() PASSED
+  Test eraseOfExistingKeyReturnsTrueAndDecrementsSize() PASSED
+  Test copyConstructorMakesSeparateCopy() PASSED
+  Test insertWhileEmptyReturnsTrueAndMapSizeIsOne() PASSED
+  Test copyConstructorMakesCorrectSize() PASSED
+  Test eraseOnEmptyMapReturnsFalseAndSizeRemainsZero() FAILED
+
+  org.opentest4j.AssertionFailedError: expected: <false> but was: <true>
+      at app//MapTest.eraseOnEmptyMapReturnsFalseAndSizeRemainsZero(MapTest.java:143)
+
+  Test cloneWithManyItemsHasCorrectValues() FAILED
+
+  org.opentest4j.AssertionFailedError: expected: <50> but was: <null>
+      at app//MapTest.cloneWithManyItemsHasCorrectValues(MapTest.java:225)
+
+  Test getThenInsertOnMissingKeyProperlySetsValueAndIncrementsSize() PASSED
+  Test getOfExistingKeyReturnsProperValueAndSizeIsSame() PASSED
+  Test insertOfSameKeyReturnsFalseAndMapSizeRemainsSame() FAILED
+
+  org.opentest4j.AssertionFailedError: expected: <false> but was: <true>
+      at app//MapTest.insertOfSameKeyReturnsFalseAndMapSizeRemainsSame(MapTest.java:72)
+
+
+FAILURE: Executed 14 tests in 1.1s (4 failed)
+
+
+14 tests completed, 4 failed
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':test'.
+> There were failing tests. See the report at: file:///home/mbkulik/School/cs515/cs515-java/assignments/2P-JUnitTestMap/build/reports/tests/test/index.html
+
+* Try:
+> Run with --stacktrace option to get the stack trace.
+> Run with --info or --debug option to get more log output.
+> Run with --scan to get full insights.
+
+* Get more help at https://help.gradle.org
+
+BUILD FAILED in 2s
+5 actionable tasks: 5 executed
+
+++++++++ Broken 4 Tests ++++++++
+
+> Task :clean
+> Task :compileJava
+> Task :processResources NO-SOURCE
+> Task :classes
+> Task :jar
+> Task :assemble
+> Task :compileTestJava
+> Task :processTestResources NO-SOURCE
+> Task :testClasses
+
+> Task :test FAILED
+
+MapTest
+
+  Test getThenInsertOnEmptyMapProperlySetsValueAndSizeIsOne() PASSED
+  Test eraseOfMissingKeyReturnsFalseAndSizeRemainsSame() PASSED
+  Test constructorCreatesZeroSizeMap() PASSED
+  Test cloneMakesSeparateCopy() FAILED
+
+  org.opentest4j.AssertionFailedError: expected: <3> but was: <1>
+      at app//MapTest.cloneMakesSeparateCopy(MapTest.java:197)
+
+  Test cloneMakesCorrectSize() FAILED
+
+  org.opentest4j.AssertionFailedError: expected: <0> but was: <1>
+      at app//MapTest.cloneMakesCorrectSize(MapTest.java:175)
+
+  Test eraseOfExistingKeyReturnsTrueAndDecrementsSize() PASSED
+  Test copyConstructorMakesSeparateCopy() FAILED
+
+  org.opentest4j.AssertionFailedError: expected: <3> but was: <1>
+      at app//MapTest.copyConstructorMakesSeparateCopy(MapTest.java:57)
+
+  Test insertWhileEmptyReturnsTrueAndMapSizeIsOne() FAILED
+
+  org.opentest4j.AssertionFailedError: expected: <true> but was: <false>
+      at app//MapTest.insertWhileEmptyReturnsTrueAndMapSizeIsOne(MapTest.java:22)
+
+  Test copyConstructorMakesCorrectSize() FAILED
+
+  org.opentest4j.AssertionFailedError: expected: <2> but was: <0>
+      at app//MapTest.copyConstructorMakesCorrectSize(MapTest.java:36)
+
+  Test eraseOnEmptyMapReturnsFalseAndSizeRemainsZero() PASSED
+  Test cloneWithManyItemsHasCorrectValues() FAILED
+
+  org.opentest4j.AssertionFailedError: expected: <1050> but was: <0>
+      at app//MapTest.cloneWithManyItemsHasCorrectValues(MapTest.java:222)
+
+  Test getThenInsertOnMissingKeyProperlySetsValueAndIncrementsSize() PASSED
+  Test getOfExistingKeyReturnsProperValueAndSizeIsSame() PASSED
+  Test insertOfSameKeyReturnsFalseAndMapSizeRemainsSame() PASSED
+
+FAILURE: Executed 14 tests in 1.1s (6 failed)
+
+
+14 tests completed, 6 failed
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':test'.
+> There were failing tests. See the report at: file:///home/mbkulik/School/cs515/cs515-java/assignments/2P-JUnitTestMap/build/reports/tests/test/index.html
+
+* Try:
+> Run with --stacktrace option to get the stack trace.
+> Run with --info or --debug option to get more log output.
+> Run with --scan to get full insights.
+
+* Get more help at https://help.gradle.org
+
+BUILD FAILED in 2s
+5 actionable tasks: 5 executed
+
+++++++++ Broken 5 Tests ++++++++
+
+> Task :clean
+> Task :compileJava
+> Task :processResources NO-SOURCE
+> Task :classes
+> Task :jar
+> Task :assemble
+> Task :compileTestJava
+> Task :processTestResources NO-SOURCE
+> Task :testClasses
+
+> Task :test FAILED
+
+MapTest
+
+  Test getThenInsertOnEmptyMapProperlySetsValueAndSizeIsOne() PASSED
+  Test eraseOfMissingKeyReturnsFalseAndSizeRemainsSame() PASSED
+  Test constructorCreatesZeroSizeMap() PASSED
+  Test cloneMakesSeparateCopy() FAILED
+
+  org.opentest4j.AssertionFailedError: expected: <1> but was: <2>
+      at app//MapTest.cloneMakesSeparateCopy(MapTest.java:196)
+
+  Test cloneMakesCorrectSize() PASSED
+  Test eraseOfExistingKeyReturnsTrueAndDecrementsSize() PASSED
+  Test copyConstructorMakesSeparateCopy() FAILED
+
+  org.opentest4j.AssertionFailedError: expected: not equal but was: <beta>
+      at app//MapTest.copyConstructorMakesSeparateCopy(MapTest.java:60)
+
+  Test insertWhileEmptyReturnsTrueAndMapSizeIsOne() PASSED
+  Test copyConstructorMakesCorrectSize() PASSED
+  Test eraseOnEmptyMapReturnsFalseAndSizeRemainsZero() PASSED
+  Test cloneWithManyItemsHasCorrectValues() PASSED
+  Test getThenInsertOnMissingKeyProperlySetsValueAndIncrementsSize() PASSED
+  Test getOfExistingKeyReturnsProperValueAndSizeIsSame() PASSED
+  Test insertOfSameKeyReturnsFalseAndMapSizeRemainsSame() PASSED
+
+FAILURE: Executed 14 tests in 1.1s (2 failed)
+
+
+14 tests completed, 2 failed
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':test'.
+> There were failing tests. See the report at: file:///home/mbkulik/School/cs515/cs515-java/assignments/2P-JUnitTestMap/build/reports/tests/test/index.html
+
+* Try:
+> Run with --stacktrace option to get the stack trace.
+> Run with --info or --debug option to get more log output.
+> Run with --scan to get full insights.
+
+* Get more help at https://help.gradle.org
+
+BUILD FAILED in 2s
+5 actionable tasks: 5 executed
