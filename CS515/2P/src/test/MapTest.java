@@ -145,7 +145,7 @@
       testmap.insert(2, "Next");
       testmap.insert(3, "last");
       assertFalse(testmap.erase(4));
-      assertEquals(0, testmap.size());
+      assertEquals(3, testmap.size());
     }
 
 
