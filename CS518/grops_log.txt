@@ -1,0 +1,24 @@
+Add
+### Added groups
+     {'_id': ObjectId('65d61f90f49ba64db0551966'), 'name': 'Health'}
+     {'_id': ObjectId('65d61f90f49ba64db0551967'), 'name': 'Work'}
+
+Get
+### Get Name from ID
+    Health
+### Get ID from name
+    65d61f90f49ba64db0551966
+### Get Groups
+     {'_id': ObjectId('65d61f90f49ba64db0551966'), 'name': 'Health'}
+     {'_id': ObjectId('65d61f90f49ba64db0551967'), 'name': 'Work'}
+
+Update
+     {'_id': ObjectId('65d61f90f49ba64db0551966'), 'name': 'Health'}
+### updating name of group 1
+     {'_id': ObjectId('65d61f90f49ba64db0551966'), 'name': 'Mood'}
+
+Delete
+    {'_id': ObjectId('65d61f90f49ba64db0551966'), 'name': 'Mood'}
+    {'_id': ObjectId('65d61f90f49ba64db0551967'), 'name': 'Work'}
+#### deleting group 2
+    {'_id': ObjectId('65d61f90f49ba64db0551966'), 'name': 'Mood'}
