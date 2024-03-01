@@ -1,3 +1,10 @@
+/** CS515 Lab 3
+ File: Set.java
+ Name: Liam Warren
+ Section: 1
+ Date: 2.20.24
+*/ 
+
 package set;
 
 /**
@@ -30,7 +37,24 @@ public class Set<T extends Comparable<T>> {
      * @param s the set to be copied
      */
     public Set(Set<T> s) {
-        // TODO : Implement
+        //init head and tail
+        this.head = new Elem();
+        this.tail = new Elem();
+
+        this.head.prev = null;
+        this.head.next = tail;
+
+        this.tail.prev = head;
+        this.tail.next = null;
+
+        this.size = 0;
+
+        //copy Set s
+        Elem tmp = s.head.next;
+        while (tmp!=s.tail) {
+            insert(tmp.info);
+            tmp = tmp.next;
+        }
     }
 
     /**
@@ -38,7 +62,19 @@ public class Set<T extends Comparable<T>> {
      * @param value the element to be added
      */
     public void insert(T value) {
-        // TODO : Implement
+        Elem tmp = head.next;
+        while (tmp != tail && value.compareTo(tmp.info) > 0) {
+            tmp = tmp.next;
+        }
+        if (tmp == tail || tmp.info.compareTo(value) != 0) {
+            Elem newElem = new Elem();
+            newElem.info = value;
+            tmp.prev.next = newElem;
+            newElem.prev = tmp.prev;
+            newElem.next = tmp;
+            tmp.prev = newElem;
+            ++size;
+        }
     }
 
     /**
@@ -47,7 +83,13 @@ public class Set<T extends Comparable<T>> {
      * @return true if element found; false otherwise
      */
     public boolean find(T value) {
-        // TODO : Implement
+        Elem tmp = head.next;
+        while (tmp != tail) {
+            if (tmp.info.compareTo(value) == 0) {
+                return true;
+            }
+            tmp = tmp.next;
+        }
         return false;
     }
 
@@ -56,14 +98,25 @@ public class Set<T extends Comparable<T>> {
      * @param value the element to be removed
      */
     public void erase(T value) {
-        // TODO : Implement
+        Elem tmp = head.next;
+        while (tmp != tail) {
+            if (tmp.info.compareTo(value) == 0) {
+                tmp.prev.next = tmp.next;
+                tmp.next.prev = tmp.prev;
+                --size;
+            }
+            tmp = tmp.next;
+        }
+
     }
     
     /**
      * Removes all the elements from the set.
      */
     public void clear() {
-        // TODO : Implement
+        head.next = tail;
+        tail.prev = head;
+        size = 0;
     }
 
     /**
@@ -85,10 +138,17 @@ public class Set<T extends Comparable<T>> {
             return false;
         }  
         Set<T> otherSet = (Set<T>) o;
-
-        // TODO : Implement
+        Elem tmp = head.next;
+        Elem otherTmp = otherSet.head.next;
+        while(tmp != tail) {
+            if(!tmp.info.equals(otherTmp.info)) {
+                return false;
+            }
+            tmp = tmp.next;
+            otherTmp = otherTmp.next;
+        }
         
-        return false;
+        return true;
     }
 
     /**

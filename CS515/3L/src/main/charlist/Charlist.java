@@ -1,3 +1,9 @@
+/** CS515 Lab 3
+ File: Charlist.java
+ Name: Liam Warren
+ Section: 1
+ Date: 2.20.24
+*/ 
 package charlist;
 
 /**
