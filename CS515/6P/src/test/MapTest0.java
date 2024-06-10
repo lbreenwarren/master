@@ -17,7 +17,6 @@ public class MapTest0 {
 
         Map<String, String> m1 = new Map<>();
         System.out.println("\n\nMap test 1\n\n");
-
         assertTrue( m1.insert("cute", "boy"));
         assertTrue( m1.insert("cool", "breeze"));
         assertTrue( m1.insert("warm", "fire"));
@@ -38,9 +37,12 @@ public class MapTest0 {
         System.out.println("\n\nMap test 2\n\n");
         Map<Integer, Integer> m2 = new Map<>();
         m2.insert(29, 1);
+
         m2.insert(34, 1);
+        
         m2.insert(39, 1);
         m2.insert(23, 1);
+        System.out.print(m2 + "\n\n\n\n\n");
         m2.insert(87, 1);
         m2.insert(45, 1);
         m2.insert(83, 1);
@@ -55,9 +57,6 @@ public class MapTest0 {
         m2.insert(11, 1);
         m2.insert(32, 1);
         m2.insert(86, 1);
-
-
-        System.out.print(m2 + "\n\n\n\n\n");
 
         m2.replace(29, 2);
         m2.replace(34, 2);
@@ -77,14 +76,45 @@ public class MapTest0 {
         m2.replace(11, 2);
         m2.replace(32, 2);
         m2.replace(86, 2);
-
-        System.out.print(m2 + "\n\n");
+        
+        // System.out.print(m2 + "\n\n\n\n\n");
+        // m2.erase(29);
+        // System.out.print(m2 + "\n\n\n\n\n");
+        // m2.erase(34);
+        // System.out.print(m2 + "\n\n\n\n\n");
+        // m2.erase(39);
+        // System.out.print(m2 + "\n\n\n\n\n");
+        // m2.erase(23);
+        // System.out.print(m2 + "\n\n\n\n\n");
+        // m2.erase(87);
+        // System.out.print(m2 + "\n\n\n\n\n");
+        // m2.erase(45);
+        // m2.erase(83);
+        // m2.erase(22);
+        // m2.erase(12);
+        // m2.erase(57);
+        // m2.erase(21);
+        // m2.erase(30);
+        // m2.erase(2);
+        // m2.erase(26);
+        // m2.erase(5);
+        // m2.erase(11);
+        // m2.erase(32);
+        // m2.erase(86);
 
         Iterator it2 = m2.keyIterator();
 
+        System.out.print(m2 + "\n\n\n\n\n");
         while (it2.hasNext()){
             System.out.print(it2.next() + " ");
         }
+        m2.replaceAll((key,value) -> {
+            return value * 2;
+        });
+
+   
         System.out.println();
+
+
     }
 }

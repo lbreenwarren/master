@@ -17,7 +17,8 @@ public class DisjointSet<T extends Comparable<T>> {
 	 * Creates a singleton from the parameter.
 	 */
 	public void createSet(T _t) {
-        // TO IMPLEMENT
+        parents.put(_t, _t);
+		depths.put(_t, 0);
 	}
 
 	/**
@@ -25,14 +26,33 @@ public class DisjointSet<T extends Comparable<T>> {
 	 * parameter. Implements path compression.
 	 */
 	public T findSet(T _t) {
-		//TO IMPLEMENT
-        return null;
+		T tmp = _t;
+		while(parents.get(tmp) != tmp) {
+			T tmp2 = tmp;
+			tmp = parents.get(tmp);
+			parents.replace(tmp2, tmp);
+		}
+        return tmp;
 	}
 
 	/**
 	 * Combines the sets which contain the parameters.
 	 */
 	public void unionSets(T _u, T _v) {
-	    //TO IMPLEMENT
+	    T u_id = findSet(_u);
+		T v_id = findSet(_v);
+		if (u_id == v_id) {
+			return;
+		} else {
+			if (depths.get(u_id) < depths.get(v_id)){
+				parents.replace(u_id, v_id);
+			}
+			else if (depths.get(u_id) > depths.get(v_id)) {
+				parents.replace(v_id, u_id);
+			} else {
+				parents.replace(u_id, v_id);
+				depths.replace(v_id, depths.get(v_id) + 1);
+			}
+		}
 	}
 }

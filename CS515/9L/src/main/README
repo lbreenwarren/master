@@ -1,0 +1,58 @@
+CS515 Lab 8
+
+
+Name: Liam Warren
+uid: <Your user name>
+Section:
+
+
+sort1 is Bubble Sort
+Your evidence:
+
+The first sorting algorithm can be identified as bubble sort becuase if interuppted after n iterations, the 
+last n elements in the list are sorted. This indicates a bubble sort because bubble sort works by looking at each index
+and swapping it with the next index if its value is greater than the current index's, then repeating until it finds no 
+pairs of values which are out of order. This method causes larger numbers to "bubble" towards the end of the list. 
+
+sort2 is Heap Sort
+Your evidence:
+The Second Sorting algorithm can be identified as heap sort because if interupted after n iterations, it can be seen that 
+the n largest elements are in their correct place, and the rest of the list is organized into a heap. 
+
+
+
+sort3 is Insertion Sort
+Your evidence:
+The third sorting algorithm can be identified as Insertion Sort because when interupted after n iterations, the first n 
+items are in order, which is indicative of insertion or selection sort. However, while the first n items are in order, 
+they are not in sorted to their proper location in the overall list. This is indicative of Insertion sort.
+
+
+
+sort4 is Quick sort
+Your evidence:
+The fourth sourting algorithm can be identified as Quick Sort because of its efficiency. With heap sort the already identified,
+Quick Sort is the only algorithm left that sorts in nlog(n) time. On a list of size 500, sort4 completed in 8761 nano seconds and 
+sort 1 completed in 19120 nano seconds. A descrepency in efficiency this large can only be explained by a more efficient algortithm,
+therfore sort4 must be Quick Sort
+
+
+
+
+sort5 is Selection Sort
+Your evidence:
+The fith algorithm can be identified as Selection Sort through a process of elimination as well as the observation that when interupted
+after n iteration, the first n elements are sorted to their correct location.
+
+
+
+——————————————————
+How many hours did you take to complete this assignment?
+1.5
+
+How difficult did you find this assignment from a scale of 0-10 where 10 represents the hardest?
+3
+
+What challenges did you encounter? And how did you address them?
+Heap sort was hard to identify because it was less visually identifiable than the others, but once I narrowed down the two
+most efficient algorithms, it was differentiable from Quick Sort, and easily verifiable.

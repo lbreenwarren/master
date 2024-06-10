@@ -9,7 +9,24 @@ public class DisjointSetTest {
     public void DSTest0() {
         DisjointSet<Integer> s = new DisjointSet<Integer>();
 
-        //TO IMPLEMENT - DISJOINT SET USAGE
+        s.createSet(1);
+        s.createSet(2);
+        s.createSet(4);
+        s.createSet(7);
+        s.createSet(8);
+        s.createSet(6);
+        s.createSet(3);
+        s.createSet(5);
+        s.createSet(9);
+        
+        s.unionSets(3, 5);
+        s.unionSets(4, 2);
+        s.unionSets(1, 6);
+        s.unionSets(5, 7);
+        s.unionSets(4, 8);
+        s.unionSets(3, 7);
+        s.unionSets(8, 1);
+
 
         assertEquals(s.findSet(1), s.findSet(6));
         assertNotEquals(s.findSet(3), s.findSet(6));
