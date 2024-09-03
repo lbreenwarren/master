@@ -1,0 +1,18 @@
+[3]
+	[-6,-2]
+		[-8]
+			-10:negative -9:negative
+			-8:negative -7:negative
+		[-4]
+			-6:negative -5:negative
+			-4:negative -3:negative
+		[1]
+			-2:negative -1:negative 0:positive
+			1:positive 2:positive
+	[7]
+		[5]
+			3:positive 4:positive
+			5:positive 6:positive
+		[9]
+			7:positive 8:positive
+			9:positive 10:positive

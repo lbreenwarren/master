@@ -1,0 +1,318 @@
+----printing tree----
+1:apple
+----printing tree----
+1:apple 2:baby
+----printing tree----
+1:apple 2:baby 3:carrot
+----printing tree----
+[3]
+	1:apple 2:baby
+	3:carrot 4:dog
+----printing tree----
+[3]
+	1:apple 2:baby
+	3:carrot 4:dog 5:eat
+----printing tree----
+[3,5]
+	1:apple 2:baby
+	3:carrot 4:dog
+	5:eat 6:fly
+----printing tree----
+[3,5]
+	1:apple 2:baby
+	3:carrot 4:dog
+	5:eat 6:fly 7:giggle
+----printing tree----
+[5]
+	[3]
+		1:apple 2:baby
+		3:carrot 4:dog
+	[7]
+		5:eat 6:fly
+		7:giggle 8:hello
+----printing tree----
+[5]
+	[3]
+		1:apple 2:baby
+		3:carrot 4:dog
+	[7]
+		5:eat 6:fly
+		7:giggle 8:hello 9:island
+----printing tree----
+[5]
+	[3]
+		1:apple 2:baby
+		3:carrot 4:dog
+	[7,9]
+		5:eat 6:fly
+		7:giggle 8:hello
+		9:island 10:joy
+----printing tree----
+[5]
+	[3]
+		1:apple 2:baby
+		3:carrot 4:dog
+	[7,9]
+		5:eat 6:fly
+		7:giggle 8:hello
+		9:island 10:joy 11:kind
+----printing tree----
+[5,9]
+	[3]
+		1:apple 2:baby
+		3:carrot 4:dog
+	[7]
+		5:eat 6:fly
+		7:giggle 8:hello
+	[11]
+		9:island 10:joy
+		11:kind 12:light
+----printing tree----
+[5,9]
+	[3]
+		1:apple 2:baby
+		3:carrot 4:dog
+	[7]
+		5:eat 6:fly
+		7:giggle 8:hello
+	[11]
+		9:island 10:joy
+		11:kind 12:light 13:merry
+----printing tree----
+[5,9]
+	[3]
+		1:apple 2:baby
+		3:carrot 4:dog
+	[7]
+		5:eat 6:fly
+		7:giggle 8:hello
+	[11,13]
+		9:island 10:joy
+		11:kind 12:light
+		13:merry 14:nice
+----printing tree----
+[5,9]
+	[3]
+		1:apple 2:baby
+		3:carrot 4:dog
+	[7]
+		5:eat 6:fly
+		7:giggle 8:hello
+	[11,13]
+		9:island 10:joy
+		11:kind 12:light
+		13:merry 14:nice 15:orange
+----printing tree----
+[9]
+	[5]
+		[3]
+			1:apple 2:baby
+			3:carrot 4:dog
+		[7]
+			5:eat 6:fly
+			7:giggle 8:hello
+	[13]
+		[11]
+			9:island 10:joy
+			11:kind 12:light
+		[15]
+			13:merry 14:nice
+			15:orange 16:puppy
+----printing tree----
+[9]
+	[5]
+		[3]
+			1:apple 2:baby
+			3:carrot 4:dog
+		[7]
+			5:eat 6:fly
+			7:giggle 8:hello
+	[13]
+		[11]
+			9:island 10:joy
+			11:kind 12:light
+		[15]
+			13:merry 14:nice
+			15:orange 16:puppy 17:quite
+----printing tree----
+[9]
+	[5]
+		[3]
+			1:apple 2:baby
+			3:carrot 4:dog
+		[7]
+			5:eat 6:fly
+			7:giggle 8:hello
+	[13]
+		[11]
+			9:island 10:joy
+			11:kind 12:light
+		[15,17]
+			13:merry 14:nice
+			15:orange 16:puppy
+			17:quite 18:rose
+----printing tree----
+[9]
+	[5]
+		[3]
+			1:apple 2:baby
+			3:carrot 4:dog
+		[7]
+			5:eat 6:fly
+			7:giggle 8:hello
+	[13]
+		[11]
+			9:island 10:joy
+			11:kind 12:light
+		[15,17]
+			13:merry 14:nice
+			15:orange 16:puppy
+			17:quite 18:rose 19:sandy
+----printing tree----
+[9]
+	[5]
+		[3]
+			1:apple 2:baby
+			3:carrot 4:dog
+		[7]
+			5:eat 6:fly
+			7:giggle 8:hello
+	[13,17]
+		[11]
+			9:island 10:joy
+			11:kind 12:light
+		[15]
+			13:merry 14:nice
+			15:orange 16:puppy
+		[19]
+			17:quite 18:rose
+			19:sandy 20:tree
+----printing tree----
+[9]
+	[5]
+		[3]
+			1:apple 2:baby
+			3:carrot 4:dog
+		[7]
+			5:eat 6:fly
+			7:giggle 8:hello
+	[13,17]
+		[11]
+			9:island 10:joy
+			11:kind 12:light
+		[15]
+			13:merry 14:nice
+			15:orange 16:puppy
+		[19]
+			17:quite 18:rose
+			19:sandy 20:tree 21:uncle
+----printing tree----
+[9]
+	[5]
+		[3]
+			1:apple 2:baby
+			3:carrot 4:dog
+		[7]
+			5:eat 6:fly
+			7:giggle 8:hello
+	[13,17]
+		[11]
+			9:island 10:joy
+			11:kind 12:light
+		[15]
+			13:merry 14:nice
+			15:orange 16:puppy
+		[19,21]
+			17:quite 18:rose
+			19:sandy 20:tree
+			21:uncle 22:viola
+----printing tree----
+[9]
+	[5]
+		[3]
+			1:apple 2:baby
+			3:carrot 4:dog
+		[7]
+			5:eat 6:fly
+			7:giggle 8:hello
+	[13,17]
+		[11]
+			9:island 10:joy
+			11:kind 12:light
+		[15]
+			13:merry 14:nice
+			15:orange 16:puppy
+		[19,21]
+			17:quite 18:rose
+			19:sandy 20:tree
+			21:uncle 22:viola 23:wonderful
+----printing tree----
+[9,17]
+	[5]
+		[3]
+			1:apple 2:baby
+			3:carrot 4:dog
+		[7]
+			5:eat 6:fly
+			7:giggle 8:hello
+	[13]
+		[11]
+			9:island 10:joy
+			11:kind 12:light
+		[15]
+			13:merry 14:nice
+			15:orange 16:puppy
+	[21]
+		[19]
+			17:quite 18:rose
+			19:sandy 20:tree
+		[23]
+			21:uncle 22:viola
+			23:wonderful 24:xxoo
+----printing tree----
+[9,17]
+	[5]
+		[3]
+			1:apple 2:baby
+			3:carrot 4:dog
+		[7]
+			5:eat 6:fly
+			7:giggle 8:hello
+	[13]
+		[11]
+			9:island 10:joy
+			11:kind 12:light
+		[15]
+			13:merry 14:nice
+			15:orange 16:puppy
+	[21]
+		[19]
+			17:quite 18:rose
+			19:sandy 20:tree
+		[23]
+			21:uncle 22:viola
+			23:wonderful 24:xxoo 25:young
+----printing tree----
+[9,17]
+	[5]
+		[3]
+			1:apple 2:baby
+			3:carrot 4:dog
+		[7]
+			5:eat 6:fly
+			7:giggle 8:hello
+	[13]
+		[11]
+			9:island 10:joy
+			11:kind 12:light
+		[15]
+			13:merry 14:nice
+			15:orange 16:puppy
+	[21]
+		[19]
+			17:quite 18:rose
+			19:sandy 20:tree
+		[23,25]
+			21:uncle 22:viola
+			23:wonderful 24:xxoo
+			25:young 26:zebra

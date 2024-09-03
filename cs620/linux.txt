@@ -1,0 +1,1141 @@
+Script started on 2024-08-29 19:20:40-04:00 [TERM="xterm-256color" TTY="/dev/pts/5" COLUMNS="253" LINES="41"]
+]0;lbw1009@agate:~[?2004h[32mlbw1009@agate[0m:[32m~[0m$[0m whoami
+[?2004llbw1009
+]0;lbw1009@agate:~[?2004h[32mlbw1009@agate[0m:[32m~[0m$[0m pwd
+[?2004l/home/csu/lbw1009
+]0;lbw1009@agate:~[?2004h[32mlbw1009@agate[0m:[32m~[0m$[0m ls
+[?2004l[0m[01;34mCS420[0m  [01;34mcs527[0m  linux.txt
+]0;lbw1009@agate:~[?2004h[32mlbw1009@agate[0m:[32m~[0m$[0m mkdir cs620
+[?2004l]0;lbw1009@agate:~[?2004h[32mlbw1009@agate[0m:[32m~[0m$[0m ls
+[?2004l[0m[01;34mCS420[0m  [01;34mcs527[0m  [01;34mcs620[0m  linux.txt
+]0;lbw1009@agate:~[?2004h[32mlbw1009@agate[0m:[32m~[0m$[0m pwd
+[?2004l/home/csu/lbw1009
+]0;lbw1009@agate:~[?2004h[32mlbw1009@agate[0m:[32m~[0m$[0m cd cs620/
+[?2004l]0;lbw1009@agate:~/cs620[?2004h[32mlbw1009@agate[0m:[32m~/cs620[0m$[0m echo "linux is so much fun" > temp.txt
+[?2004l]0;lbw1009@agate:~/cs620[?2004h[32mlbw1009@agate[0m:[32m~/cs620[0m$[0m cat tre[K[Kemp.txt 
+[?2004llinux is so much fun
+]0;lbw1009@agate:~/cs620[?2004h[32mlbw1009@agate[0m:[32m~/cs620[0m$[0m cp temp.txt tempcopy.txt
+[?2004l]0;lbw1009@agate:~/cs620[?2004h[32mlbw1009@agate[0m:[32m~/cs620[0m$[0m cp temp.txt tempcompy.c
+[?2004l]0;lbw1009@agate:~/cs620[?2004h[32mlbw1009@agate[0m:[32m~/cs620[0m$[0m cat tempcopy.txt
+[?2004llinux is so much fun
+]0;lbw1009@agate:~/cs620[?2004h[32mlbw1009@agate[0m:[32m~/cs620[0m$[0m ln temp.txt temp2.txt
+[?2004l]0;lbw1009@agate:~/cs620[?2004h[32mlbw1009@agate[0m:[32m~/cs620[0m$[0m ls
+[?2004ltemp2.txt  tempcompy.c  tempcopy.txt  temp.txt
+]0;lbw1009@agate:~/cs620[?2004h[32mlbw1009@agate[0m:[32m~/cs620[0m$[0m more temp2`[K.txt 
+[?2004llinux is so much fun
+]0;lbw1009@agate:~/cs620[?2004h[32mlbw1009@agate[0m:[32m~/cs620[0m$[0m more temp.txt 
+[?2004llinux is so much fun
+]0;lbw1009@agate:~/cs620[?2004h[32mlbw1009@agate[0m:[32m~/cs620[0m$[0m less temp.txt
+[?2004l[?1049h[22;0;0t[41;1H[?1h=linux is so much fun
+[7mtemp.txt (END)[27m[K[K[K[7m(END)[27m[K[K[K[7m(END)[27m[K[K[K[7m(END)[27m[K[K[K[7m(END)[27m[K[K...skipping...
+linux is so much fun
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[7m(END)[27m[K[K[7m(END)[27m[K[K[K[7m(END)[27m[K[K[K[7m(END)[27m[K[K[K[7m(END)[27m[K[K[K[7m(END)[27m[K[K [KESCESC[H[2J[H[H[2J[Hlinux is so much fun
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[7m(END)[27m[K[K[?1l>[?1049l[23;0;0t
+[1]+  Stopped                 less temp.txt
+]0;lbw1009@agate:~/cs620[?2004h[32mlbw1009@agate[0m:[32m~/cs620[0m$[0m cat tempcopy.txt
+[?2004llinux is so much fun
+]0;lbw1009@agate:~/cs620[?2004h[32mlbw1009@agate[0m:[32m~/cs620[0m$[0m cat temp2.txt
+[?2004llinux is so much fun
+]0;lbw1009@agate:~/cs620[?2004h[32mlbw1009@agate[0m:[32m~/cs620[0m$[0m ls-l
+[?2004lbash: ls-l: command not found
+]0;lbw1009@agate:~/cs620[?2004h[32mlbw1009@agate[0m:[32m~/cs620[0m$[0m ls -l
+[?2004ltotal 16
+-rw------- 2 lbw1009 cs410 21 Aug 29 19:21 temp2.txt
+-rw------- 1 lbw1009 cs410 21 Aug 29 19:21 tempcompy.c
+-rw------- 1 lbw1009 cs410 21 Aug 29 19:21 tempcopy.txt
+-rw------- 2 lbw1009 cs410 21 Aug 29 19:21 temp.txt
+]0;lbw1009@agate:~/cs620[?2004h[32mlbw1009@agate[0m:[32m~/cs620[0m$[0m ls -l | grep txt
+[?2004l-rw------- 2 lbw1009 cs410 21 Aug 29 19:21 temp2.[01;31m[Ktxt[m[K
+-rw------- 1 lbw1009 cs410 21 Aug 29 19:21 tempcopy.[01;31m[Ktxt[m[K
+-rw------- 2 lbw1009 cs410 21 Aug 29 19:21 temp.[01;31m[Ktxt[m[K
+]0;lbw1009@agate:~/cs620[?2004h[32mlbw1009@agate[0m:[32m~/cs620[0m$[0m ls-l *.txt
+[?2004lbash: ls-l: command not found
+]0;lbw1009@agate:~/cs620[?2004h[32mlbw1009@agate[0m:[32m~/cs620[0m$[0m ls-l *.txt[1@ 
+[?2004l-rw------- 2 lbw1009 cs410 21 Aug 29 19:21 temp2.txt
+-rw------- 1 lbw1009 cs410 21 Aug 29 19:21 tempcopy.txt
+-rw------- 2 lbw1009 cs410 21 Aug 29 19:21 temp.txt
+]0;lbw1009@agate:~/cs620[?2004h[32mlbw1009@agate[0m:[32m~/cs620[0m$[0m date
+[?2004lThu Aug 29 07:24:12 PM EDT 2024
+]0;lbw1009@agate:~/cs620[?2004h[32mlbw1009@agate[0m:[32m~/cs620[0m$[0m ls -l | cut -c11=[K-
+[?2004l
+ 2 lbw1009 cs410 21 Aug 29 19:21 temp2.txt
+ 1 lbw1009 cs410 21 Aug 29 19:21 tempcompy.c
+ 1 lbw1009 cs410 21 Aug 29 19:21 tempcopy.txt
+ 2 lbw1009 cs410 21 Aug 29 19:21 temp.txt
+]0;lbw1009@agate:~/cs620[?2004h[32mlbw1009@agate[0m:[32m~/cs620[0m$[0m cat temp.txt |
+[?2004l[?2004h> ^C[?2004l[?2004h[?2004l
+]0;lbw1009@agate:~/cs620[?2004h[32mlbw1009@agate[0m:[32m~/cs620[0m$[0m cat temp.txt |
+[?2004l[?2004h> ^C[?2004l[?2004h[?2004l
+]0;lbw1009@agate:~/cs620[?2004h[32mlbw1009@agate[0m:[32m~/cs620[0m$[0m cat temp.txt | ger[K[Krep "done"
+[?2004l]0;lbw1009@agate:~/cs620[?2004h[32mlbw1009@agate[0m:[32m~/cs620[0m$[0m grep "done" temp.txt
+[?2004l]0;lbw1009@agate:~/cs620[?2004h[32mlbw1009@agate[0m:[32m~/cs620[0m$[0m find . | more
+[?2004l.
+./tempcopy.txt
+./temp2.txt
+./tempcompy.c
+./temp.txt
+]0;lbw1009@agate:~/cs620[?2004h[32mlbw1009@agate[0m:[32m~/cs620[0m$[0m find . -type f -name "*.txt"
+[?2004l./tempcopy.txt
+./temp2.txt
+./temp.txt
+]0;lbw1009@agate:~/cs620[?2004h[32mlbw1009@agate[0m:[32m~/cs620[0m$[0m whereis open
+[?2004lopen: /usr/share/man/man2/open.2.gz /usr/share/man/man3/open.3pm.gz
+]0;lbw1009@agate:~/cs620[?2004h[32mlbw1009@agate[0m:[32m~/cs620[0m$[0m which -a echo
+[?2004l/usr/bin/echo
+]0;lbw1009@agate:~/cs620[?2004h[32mlbw1009@agate[0m:[32m~/cs620[0m$[0m jobs
+[?2004l[1]+  Stopped                 less temp.txt
+]0;lbw1009@agate:~/cs620[?2004h[32mlbw1009@agate[0m:[32m~/cs620[0m$[0m ping -c 3 age[Kate.cs.unh.edu
+[?2004lPING agate.cs.unh.edu (132.177.4.36) 56(84) bytes of data.
+64 bytes from agate.cs.unh.edu (132.177.4.36): icmp_seq=1 ttl=64 time=0.045 ms
+64 bytes from agate.cs.unh.edu (132.177.4.36): icmp_seq=2 ttl=64 time=0.045 ms
+64 bytes from agate.cs.unh.edu (132.177.4.36): icmp_seq=3 ttl=64 time=0.043 ms
+
+--- agate.cs.unh.edu ping statistics ---
+3 packets transmitted, 3 received, 0% packet loss, time 2039ms
+rtt min/avg/max/mdev = 0.043/0.044/0.045/0.000 ms
+]0;lbw1009@agate:~/cs620[?2004h[32mlbw1009@agate[0m:[32m~/cs620[0m$[0m rm temp.txt
+[?2004lrm: remove regular file 'temp.txt'? y
+]0;lbw1009@agate:~/cs620[?2004h[32mlbw1009@agate[0m:[32m~/cs620[0m$[0m rm tempcopy.txt
+[?2004lrm: remove regular file 'tempcopy.txt'? y^X^C
+]0;lbw1009@agate:~/cs620[?2004h[32mlbw1009@agate[0m:[32m~/cs620[0m$[0m rm tempcopyl[K.txt temp2.txt
+[?2004lrm: remove regular file 'tempcopy.txt'? y
+rm: remove regular file 'temp2.txt'? y
+]0;lbw1009@agate:~/cs620[?2004h[32mlbw1009@agate[0m:[32m~/cs620[0m$[0m rm rempcopy[K[Krm tempcopy.c
+[?2004lrm: cannot remove 'tempcopy.c': No such file or directory
+]0;lbw1009@agate:~/cs620[?2004h[32mlbw1009@agate[0m:[32m~/cs620[0m$[0m rm tempcopy.cmpy.c
+[?2004lrm: remove regular file 'tempcompy.c'? y
+]0;lbw1009@agate:~/cs620[?2004h[32mlbw1009@agate[0m:[32m~/cs620[0m$[0m cd ..
+[?2004l]0;lbw1009@agate:~[?2004h[32mlbw1009@agate[0m:[32m~[0m$[0m rmdir cs620/
+[?2004l]0;lbw1009@agate:~[?2004h[32mlbw1009@agate[0m:[32m~[0m$[0m exit
+[?2004lexit
+There are stopped jobs.
+]0;lbw1009@agate:~[?2004h[32mlbw1009@agate[0m:[32m~[0m$[0m ls
+[?2004l[0m[01;34mCS420[0m  [01;34mcs527[0m  linux.txt
+]0;lbw1009@agate:~[?2004h[32mlbw1009@agate[0m:[32m~[0m$[0m cat linux.txt 
+[?2004lScript started on 2024-08-29 19:20:40-04:00 [TERM="xterm-256color" TTY="/dev/pts/5" COLUMNS="253" LINES="41"]
+]0;lbw1009@agate:~[?2004h[32mlbw1009@agate[0m:[32m~[0m$[0m whoami
+[?2004llbw1009
+]0;lbw1009@agate:~[?2004h[32mlbw1009@agate[0m:[32m~[0m$[0m pwd
+[?2004l/home/csu/lbw1009
+]0;lbw1009@agate:~[?2004h[32mlbw1009@agate[0m:[32m~[0m$[0m ls
+[?2004l[0m[01;34mCS420[0m  [01;34mcs527[0m  linux.txt
+]0;lbw1009@agate:~[?2004h[32mlbw1009@agate[0m:[32m~[0m$[0m mkdir cs620
+[?2004l]0;lbw1009@agate:~[?2004h[32mlbw1009@agate[0m:[32m~[0m$[0m ls
+[?2004l[0m[01;34mCS420[0m  [01;34mcs527[0m  [01;34mcs620[0m  linux.txt
+]0;lbw1009@agate:~[?2004h[32mlbw1009@agate[0m:[32m~[0m$[0m pwd
+[?2004l/home/csu/lbw1009
+]0;lbw1009@agate:~[?2004h[32mlbw1009@agate[0m:[32m~[0m$[0m cd cs620/
+[?2004l]0;lbw1009@agate:~/cs620[?2004h[32mlbw1009@agate[0m:[32m~/cs620[0m$[0m echo "linux is so much fun" > temp.txt
+[?2004l]0;lbw1009@agate:~/cs620[?2004h[32mlbw1009@agate[0m:[32m~/cs620[0m$[0m cat tre[K[Kemp.txt 
+[?2004llinux is so much fun
+]0;lbw1009@agate:~/cs620[?2004h[32mlbw1009@agate[0m:[32m~/cs620[0m$[0m cp temp.txt tempcopy.txt
+[?2004l]0;lbw1009@agate:~/cs620[?2004h[32mlbw1009@agate[0m:[32m~/cs620[0m$[0m cp temp.txt tempcompy.c
+[?2004l]0;lbw1009@agate:~/cs620[?2004h[32mlbw1009@agate[0m:[32m~/cs620[0m$[0m cat tempcopy.txt
+[?2004llinux is so much fun
+]0;lbw1009@agate:~/cs620[?2004h[32mlbw1009@agate[0m:[32m~/cs620[0m$[0m ln temp.txt temp2.txt
+[?2004l]0;lbw1009@agate:~/cs620[?2004h[32mlbw1009@agate[0m:[32m~/cs620[0m$[0m ls
+[?2004ltemp2.txt  tempcompy.c  tempcopy.txt  temp.txt
+]0;lbw1009@agate:~/cs620[?2004h[32mlbw1009@agate[0m:[32m~/cs620[0m$[0m more temp2`[K.txt 
+[?2004llinux is so much fun
+]0;lbw1009@agate:~/cs620[?2004h[32mlbw1009@agate[0m:[32m~/cs620[0m$[0m more temp.txt 
+[?2004llinux is so much fun
+]0;lbw1009@agate:~/cs620[?2004h[32mlbw1009@agate[0m:[32m~/cs620[0m$[0m less temp.txt
+[?2004l[?1049h[22;0;0t[41;1H[?1h=linux is so much fun
+[7mtemp.txt (END)[27m[K[K[K[7m(END)[27m[K[K[K[7m(END)[27m[K[K[K[7m(END)[27m[K[K[K[7m(END)[27m[K[K...skipping...
+linux is so much fun
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[7m(END)[27m[K[K[7m(END)[27m[K[K[K[7m(END)[27m[K[K[K[7m(END)[27m[K[K[K[7m(END)[27m[K[K[K[7m(END)[27m[K[K [KESCESC[H[2J[H[H[2J[Hlinux is so much fun
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[7m(END)[27m[K[K[?1l>[?1049l[23;0;0t
+[1]+  Stopped                 less temp.txt
+]0;lbw1009@agate:~/cs620[?2004h[32mlbw1009@agate[0m:[32m~/cs620[0m$[0m cat tempcopy.txt
+[?2004llinux is so much fun
+]0;lbw1009@agate:~/cs620[?2004h[32mlbw1009@agate[0m:[32m~/cs620[0m$[0m cat temp2.txt
+[?2004llinux is so much fun
+]0;lbw1009@agate:~/cs620[?2004h[32mlbw1009@agate[0m:[32m~/cs620[0m$[0m ls-l
+[?2004lbash: ls-l: command not found
+]0;lbw1009@agate:~/cs620[?2004h[32mlbw1009@agate[0m:[32m~/cs620[0m$[0m ls -l
+[?2004ltotal 16
+-rw------- 2 lbw1009 cs410 21 Aug 29 19:21 temp2.txt
+-rw------- 1 lbw1009 cs410 21 Aug 29 19:21 tempcompy.c
+-rw------- 1 lbw1009 cs410 21 Aug 29 19:21 tempcopy.txt
+-rw------- 2 lbw1009 cs410 21 Aug 29 19:21 temp.txt
+]0;lbw1009@agate:~/cs620[?2004h[32mlbw1009@agate[0m:[32m~/cs620[0m$[0m ls -l | grep txt
+[?2004l-rw------- 2 lbw1009 cs410 21 Aug 29 19:21 temp2.[01;31m[Ktxt[m[K
+-rw------- 1 lbw1009 cs410 21 Aug 29 19:21 tempcopy.[01;31m[Ktxt[m[K
+-rw------- 2 lbw1009 cs410 21 Aug 29 19:21 temp.[01;31m[Ktxt[m[K
+]0;lbw1009@agate:~/cs620[?2004h[32mlbw1009@agate[0m:[32m~/cs620[0m$[0m ls-l *.txt
+[?2004lbash: ls-l: command not found
+]0;lbw1009@agate:~/cs620[?2004h[32mlbw1009@agate[0m:[32m~/cs620[0m$[0m ls-l *.txt[1@ 
+[?2004l-rw------- 2 lbw1009 cs410 21 Aug 29 19:21 temp2.txt
+-rw------- 1 lbw1009 cs410 21 Aug 29 19:21 tempcopy.txt
+-rw------- 2 lbw1009 cs410 21 Aug 29 19:21 temp.txt
+]0;lbw1009@agate:~/cs620[?2004h[32mlbw1009@agate[0m:[32m~/cs620[0m$[0m date
+[?2004lThu Aug 29 07:24:12 PM EDT 2024
+]0;lbw1009@agate:~/cs620[?2004h[32mlbw1009@agate[0m:[32m~/cs620[0m$[0m ls -l | cut -c11=[K-
+[?2004l
+ 2 lbw1009 cs410 21 Aug 29 19:21 temp2.txt
+ 1 lbw1009 cs410 21 Aug 29 19:21 tempcompy.c
+ 1 lbw1009 cs410 21 Aug 29 19:21 tempcopy.txt
+ 2 lbw1009 cs410 21 Aug 29 19:21 temp.txt
+]0;lbw1009@agate:~/cs620[?2004h[32mlbw1009@agate[0m:[32m~/cs620[0m$[0m cat temp.txt |
+[?2004l[?2004h> ^C[?2004l[?2004h[?2004l
+]0;lbw1009@agate:~/cs620[?2004h[32mlbw1009@agate[0m:[32m~/cs620[0m$[0m cat temp.txt |
+[?2004l[?2004h> ^C[?2004l[?2004h[?2004l
+]0;lbw1009@agate:~/cs620[?2004h[32mlbw1009@agate[0m:[32m~/cs620[0m$[0m cat temp.txt | ger[K[Krep "done"
+[?2004l]0;lbw1009@agate:~/cs620[?2004h[32mlbw1009@agate[0m:[32m~/cs620[0m$[0m grep "done" temp.txt
+[?2004l]0;lbw1009@agate:~/cs620[?2004h[32mlbw1009@agate[0m:[32m~/cs620[0m$[0m find . | more
+[?2004l.
+./tempcopy.txt
+./temp2.txt
+./tempcompy.c
+./temp.txt
+]0;lbw1009@agate:~/cs620[?2004h[32mlbw1009@agate[0m:[32m~/cs620[0m$[0m find . -type f -name "*.txt"
+[?2004l./tempcopy.txt
+./temp2.txt
+./temp.txt
+]0;lbw1009@agate:~/cs620[?2004h[32mlbw1009@agate[0m:[32m~/cs620[0m$[0m whereis open
+[?2004lopen: /usr/share/man/man2/open.2.gz /usr/share/man/man3/open.3pm.gz
+]0;lbw1009@agate:~/cs620[?2004h[32mlbw1009@agate[0m:[32m~/cs620[0m$[0m which -a echo
+[?2004l/usr/bin/echo
+]0;lbw1009@agate:~/cs620[?2004h[32mlbw1009@agate[0m:[32m~/cs620[0m$[0m jobs
+[?2004l[1]+  Stopped                 less temp.txt
+]0;lbw1009@agate:~/cs620[?2004h[32mlbw1009@agate[0m:[32m~/cs620[0m$[0m ping -c 3 age[Kate.cs.unh.edu
+[?2004lPING agate.cs.unh.edu (132.177.4.36) 56(84) bytes of data.
+64 bytes from agate.cs.unh.edu (132.177.4.36): icmp_seq=1 ttl=64 time=0.045 ms
+64 bytes from agate.cs.unh.edu (132.177.4.36): icmp_seq=2 ttl=64 time=0.045 ms
+64 bytes from agate.cs.unh.edu (132.177.4.36): icmp_seq=3 ttl=64 time=0.043 ms
+
+--- agate.cs.unh.edu ping statistics ---
+3 packets transmitted, 3 received, 0% packet loss, time 2039ms
+rtt min/avg/max/mdev = 0.043/0.044/0.045/0.000 ms
+]0;lbw1009@agate:~/cs620[?2004h[32mlbw1009@agate[0m:[32m~/cs620[0m$[0m rm temp.txt
+[?2004lrm: remove regular file 'temp.txt'? y
+]0;lbw1009@agate:~/cs620[?2004h[32mlbw1009@agate[0m:[32m~/cs620[0m$[0m rm tempcopy.txt
+[?2004lrm: remove regular file 'tempcopy.txt'? y^X^C
+]0;lbw1009@agate:~/cs620[?2004h[32mlbw1009@agate[0m:[32m~/cs620[0m$[0m rm tempcopyl[K.txt temp2.txt
+[?2004lrm: remove regular file 'tempcopy.txt'? y
+rm: remove regular file 'temp2.txt'? y
+]0;lbw1009@agate:~/cs620[?2004h[32mlbw1009@agate[0m:[32m~/cs620[0m$[0m rm rempcopy[K[Krm tempcopy.c
+[?2004lrm: cannot remove 'tempcopy.c': No such file or directory
+]0;lbw1009@agate:~/cs620[?2004h[32mlbw1009@agate[0m:[32m~/cs620[0m$[0m rm tempcopy.cmpy.c
+[?2004lrm: remove regular file 'tempcompy.c'? y
+]0;lbw1009@agate:~/cs620[?2004h[32mlbw1009@agate[0m:[32m~/cs620[0m$[0m cd ..
+[?2004l]0;lbw1009@agate:~[?2004h[32mlbw1009@agate[0m:[32m~[0m$[0m rmdir cs620/
+[?2004l]0;lbw1009@agate:~[?2004h[32mlbw1009@agate[0m:[32m~[0m$[0m exit
+[?2004lexit
+There are stopped jobs.
+]0;lbw1009@agate:~[?2004h[32mlbw1009@agate[0m:[32m~[0m$[0m ls
+[?2004l[0m[01;34mCS420[0m  [01;34mcs527[0m  linux.txt
+]0;lbw1009@agate:~[?2004h[32mlbw1009@agate[0m:[32m~[0m$[0m cat linux.txt 
+[?2004lScript started on 2024-08-29 19:20:40-04:00 [TERM="xterm-256color" TTY="/dev/pts/5" COLUMNS="253" LINES="41"]
+]0;lbw1009@agate:~[?2004h[32mlbw1009@agate[0m:[32m~[0m$[0m whoami
+[?2004llbw1009
+]0;lbw1009@agate:~[?2004h[32mlbw1009@agate[0m:[32m~[0m$[0m pwd
+[?2004l/home/csu/lbw1009
+]0;lbw1009@agate:~[?2004h[32mlbw1009@agate[0m:[32m~[0m$[0m ls
+[?2004l[0m[01;34mCS420[0m  [01;34mcs527[0m  linux.txt
+]0;lbw1009@agate:~[?2004h[32mlbw1009@agate[0m:[32m~[0m$[0m mkdir cs620
+[?2004l]0;lbw1009@agate:~[?2004h[32mlbw1009@agate[0m:[32m~[0m$[0m ls
+[?2004l[0m[01;34mCS420[0m  [01;34mcs527[0m  [01;34mcs620[0m  linux.txt
+]0;lbw1009@agate:~[?2004h[32mlbw1009@agate[0m:[32m~[0m$[0m pwd
+[?2004l/home/csu/lbw1009
+]0;lbw1009@agate:~[?2004h[32mlbw1009@agate[0m:[32m~[0m$[0m cd cs620/
+[?2004l]0;lbw1009@agate:~/cs620[?2004h[32mlbw1009@agate[0m:[32m~/cs620[0m$[0m echo "linux is so much fun" > temp.txt
+[?2004l]0;lbw1009@agate:~/cs620[?2004h[32mlbw1009@agate[0m:[32m~/cs620[0m$[0m cat tre[K[Kemp.txt 
+[?2004llinux is so much fun
+]0;lbw1009@agate:~/cs620[?2004h[32mlbw1009@agate[0m:[32m~/cs620[0m$[0m cp temp.txt tempcopy.txt
+[?2004l]0;lbw1009@agate:~/cs620[?2004h[32mlbw1009@agate[0m:[32m~/cs620[0m$[0m cp temp.txt tempcompy.c
+[?2004l]0;lbw1009@agate:~/cs620[?2004h[32mlbw1009@agate[0m:[32m~/cs620[0m$[0m cat tempcopy.txt
+[?2004llinux is so much fun
+]0;lbw1009@agate:~/cs620[?2004h[32mlbw1009@agate[0m:[32m~/cs620[0m$[0m ln temp.txt temp2.txt
+[?2004l]0;lbw1009@agate:~/cs620[?2004h[32mlbw1009@agate[0m:[32m~/cs620[0m$[0m ls
+[?2004ltemp2.txt  tempcompy.c  tempcopy.txt  temp.txt
+]0;lbw1009@agate:~/cs620[?2004h[32mlbw1009@agate[0m:[32m~/cs620[0m$[0m more temp2`[K.txt 
+[?2004llinux is so much fun
+]0;lbw1009@agate:~/cs620[?2004h[32mlbw1009@agate[0m:[32m~/cs620[0m$[0m more temp.txt 
+[?2004llinux is so much fun
+]0;lbw1009@agate:~/cs620[?2004h[32mlbw1009@agate[0m:[32m~/cs620[0m$[0m less temp.txt
+[?2004l[?1049h[22;0;0t[41;1H[?1h=linux is so much fun
+[7mtemp.txt (END)[27m[K[K[K[7m(END)[27m[K[K[K[7m(END)[27m[K[K[K[7m(END)[27m[K[K[K[7m(END)[27m[K[K...skipping...
+linux is so much fun
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[7m(END)[27m[K[K[7m(END)[27m[K[K[K[7m(END)[27m[K[K[K[7m(END)[27m[K[K[K[7m(END)[27m[K[K[K[7m(END)[27m[K[K [KESCESC[H[2J[H[H[2J[Hlinux is so much fun
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[7m(END)[27m[K[K[?1l>[?1049l[23;0;0t
+[1]+  Stopped                 less temp.txt
+]0;lbw1009@agate:~/cs620[?2004h[32mlbw1009@agate[0m:[32m~/cs620[0m$[0m cat tempcopy.txt
+[?2004llinux is so much fun
+]0;lbw1009@agate:~/cs620[?2004h[32mlbw1009@agate[0m:[32m~/cs620[0m$[0m cat temp2.txt
+[?2004llinux is so much fun
+]0;lbw1009@agate:~/cs620[?2004h[32mlbw1009@agate[0m:[32m~/cs620[0m$[0m ls-l
+[?2004lbash: ls-l: command not found
+]0;lbw1009@agate:~/cs620[?2004h[32mlbw1009@agate[0m:[32m~/cs620[0m$[0m ls -l
+[?2004ltotal 16
+-rw------- 2 lbw1009 cs410 21 Aug 29 19:21 temp2.txt
+-rw------- 1 lbw1009 cs410 21 Aug 29 19:21 tempcompy.c
+-rw------- 1 lbw1009 cs410 21 Aug 29 19:21 tempcopy.txt
+-rw------- 2 lbw1009 cs410 21 Aug 29 19:21 temp.txt
+]0;lbw1009@agate:~/cs620[?2004h[32mlbw1009@agate[0m:[32m~/cs620[0m$[0m ls -l | grep txt
+[?2004l-rw------- 2 lbw1009 cs410 21 Aug 29 19:21 temp2.[01;31m[Ktxt[m[K
+-rw------- 1 lbw1009 cs410 21 Aug 29 19:21 tempcopy.[01;31m[Ktxt[m[K
+-rw------- 2 lbw1009 cs410 21 Aug 29 19:21 temp.[01;31m[Ktxt[m[K
+]0;lbw1009@agate:~/cs620[?2004h[32mlbw1009@agate[0m:[32m~/cs620[0m$[0m ls-l *.txt
+[?2004lbash: ls-l: command not found
+]0;lbw1009@agate:~/cs620[?2004h[32mlbw1009@agate[0m:[32m~/cs620[0m$[0m ls-l *.txt[1@ 
+[?2004l-rw------- 2 lbw1009 cs410 21 Aug 29 19:21 temp2.txt
+-rw------- 1 lbw1009 cs410 21 Aug 29 19:21 tempcopy.txt
+-rw------- 2 lbw1009 cs410 21 Aug 29 19:21 temp.txt
+]0;lbw1009@agate:~/cs620[?2004h[32mlbw1009@agate[0m:[32m~/cs620[0m$[0m date
+[?2004lThu Aug 29 07:24:12 PM EDT 2024
+]0;lbw1009@agate:~/cs620[?2004h[32mlbw1009@agate[0m:[32m~/cs620[0m$[0m ls -l | cut -c11=[K-
+[?2004l
+ 2 lbw1009 cs410 21 Aug 29 19:21 temp2.txt
+ 1 lbw1009 cs410 21 Aug 29 19:21 tempcompy.c
+ 1 lbw1009 cs410 21 Aug 29 19:21 tempcopy.txt
+ 2 lbw1009 cs410 21 Aug 29 19:21 temp.txt
+]0;lbw1009@agate:~/cs620[?2004h[32mlbw1009@agate[0m:[32m~/cs620[0m$[0m cat temp.txt |
+[?2004l[?2004h> ^C[?2004l[?2004h[?2004l
+]0;lbw1009@agate:~/cs620[?2004h[32mlbw1009@agate[0m:[32m~/cs620[0m$[0m cat temp.txt |
+[?2004l[?2004h> ^C[?2004l[?2004h[?2004l
+]0;lbw1009@agate:~/cs620[?2004h[32mlbw1009@agate[0m:[32m~/cs620[0m$[0m cat temp.txt | ger[K[Krep "done"
+[?2004l]0;lbw1009@agate:~/cs620[?2004h[32mlbw1009@agate[0m:[32m~/cs620[0m$[0m grep "done" temp.txt
+[?2004l]0;lbw1009@agate:~/cs620[?2004h[32mlbw1009@agate[0m:[32m~/cs620[0m$[0m find . | more
+[?2004l.
+./tempcopy.txt
+./temp2.txt
+./tempcompy.c
+./temp.txt
+]0;lbw1009@agate:~/cs620[?2004h[32mlbw1009@agate[0m:[32m~/cs620[0m$[0m find . -type f -name "*.txt"
+[?2004l./tempcopy.txt
+./temp2.txt
+./temp.txt
+]0;lbw1009@agate:~/cs620[?2004h[32mlbw1009@agate[0m:[32m~/cs620[0m$[0m whereis open
+[?2004lopen: /usr/share/man/man2/open.2.gz /usr/share/man/man3/open.3pm.gz
+]0;lbw1009@agate:~/cs620[?2004h[32mlbw1009@agate[0m:[32m~/cs620[0m$[0m which -a echo
+[?2004l/usr/bin/echo
+]0;lbw1009@agate:~/cs620[?2004h[32mlbw1009@agate[0m:[32m~/cs620[0m$[0m jobs
+[?2004l[1]+  Stopped                 less temp.txt
+]0;lbw1009@agate:~/cs620[?2004h[32mlbw1009@agate[0m:[32m~/cs620[0m$[0m ping -c 3 age[Kate.cs.unh.edu
+[?2004lPING agate.cs.unh.edu (132.177.4.36) 56(84) bytes of data.
+64 bytes from agate.cs.unh.edu (132.177.4.36): icmp_seq=1 ttl=64 time=0.045 ms
+64 bytes from agate.cs.unh.edu (132.177.4.36): icmp_seq=2 ttl=64 time=0.045 ms
+64 bytes from agate.cs.unh.edu (132.177.4.36): icmp_seq=3 ttl=64 time=0.043 ms
+
+--- agate.cs.unh.edu ping statistics ---
+3 packets transmitted, 3 received, 0% packet loss, time 2039ms
+rtt min/avg/max/mdev = 0.043/0.044/0.045/0.000 ms
+]0;lbw1009@agate:~/cs620[?2004h[32mlbw1009@agate[0m:[32m~/cs620[0m$[0m rm temp.txt
+[?2004lrm: remove regular file 'temp.txt'? y
+]0;lbw1009@agate:~/cs620[?2004h[32mlbw1009@agate[0m:[32m~/cs620[0m$[0m rm tempcopy.txt
+[?2004lrm: remove regular file 'tempcopy.txt'? y^X^C
+]0;lbw1009@agate:~/cs620[?2004h[32mlbw1009@agate[0m:[32m~/cs620[0m$[0m rm tempcopyl[K.txt temp2.txt
+[?2004lrm: remove regular file 'tempcopy.txt'? y
+rm: remove regular file 'temp2.txt'? y
+]0;lbw1009@agate:~/cs620[?2004h[32mlbw1009@agate[0m:[32m~/cs620[0m$[0m rm rempcopy[K[Krm tempcopy.c
+[?2004lrm: cannot remove 'tempcopy.c': No such file or directory
+]0;lbw1009@agate:~/cs620[?2004h[32mlbw1009@agate[0m:[32m~/cs620[0m$[0m rm tempcopy.cmpy.c
+[?2004lrm: remove regular file 'tempcompy.c'? y
+]0;lbw1009@agate:~/cs620[?2004h[32mlbw1009@agate[0m:[32m~/cs620[0m$[0m cd ..
+[?2004l]0;lbw1009@agate:~[?2004h[32mlbw1009@agate[0m:[32m~[0m$[0m rmdir cs620/
+[?2004l]0;lbw1009@agate:~[?2004h[32mlbw1009@agate[0m:[32m~[0m$[0m exit
+[?2004lexit
+There are stopped jobs.
+]0;lbw1009@agate:~[?2004h[32mlbw1009@agate[0m:[32m~[0m$[0m ls
+[?2004l[0m[01;34mCS420[0m  [01;34mcs527[0m  linux.txt
+]0;lbw1009@agate:~[?2004h[32mlbw1009@agate[0m:[32m~[0m$[0m cat linux.txt 
+[?2004lScript started on 2024-08-29 19:20:40-04:00 [TERM="xterm-256color" TTY="/dev/pts/5" COLUMNS="253" LINES="41"]
+]0;lbw1009@agate:~[?2004h[32mlbw1009@agate[0m:[32m~[0m$[0m whoami
+[?2004llbw1009
+]0;lbw1009@agate:~[?2004h[32mlbw1009@agate[0m:[32m~[0m$[0m pwd
+[?2004l/home/csu/lbw1009
+]0;lbw1009@agate:~[?2004h[32mlbw1009@agate[0m:[32m~[0m$[0m ls
+[?2004l[0m[01;34mCS420[0m  [01;34mcs527[0m  linux.txt
+]0;lbw1009@agate:~[?2004h[32mlbw1009@agate[0m:[32m~[0m$[0m mkdir cs620
+[?2004l]0;lbw1009@agate:~[?2004h[32mlbw1009@agate[0m:[32m~[0m$[0m ls
+[?2004l[0m[01;34mCS420[0m  [01;34mcs527[0m  [01;34mcs620[0m  linux.txt
+]0;lbw1009@agate:~[?2004h[32mlbw1009@agate[0m:[32m~[0m$[0m pwd
+[?2004l/home/csu/lbw1009
+]0;lbw1009@agate:~[?2004h[32mlbw1009@agate[0m:[32m~[0m$[0m cd cs620/
+[?2004l]0;lbw1009@agate:~/cs620[?2004h[32mlbw1009@agate[0m:[32m~/cs620[0m$[0m echo "linux is so much fun" > temp.txt
+[?2004l]0;lbw1009@agate:~/cs620[?2004h[32mlbw1009@agate[0m:[32m~/cs620[0m$[0m cat tre[K[Kemp.txt 
+[?2004llinux is so much fun
+]0;lbw1009@agate:~/cs620[?2004h[32mlbw1009@agate[0m:[32m~/cs620[0m$[0m cp temp.txt tempcopy.txt
+[?2004l]0;lbw1009@agate:~/cs620[?2004h[32mlbw1009@agate[0m:[32m~/cs620[0m$[0m cp temp.txt tempcompy.c
+[?2004l]0;lbw1009@agate:~/cs620[?2004h[32mlbw1009@agate[0m:[32m~/cs620[0m$[0m cat tempcopy.txt
+[?2004llinux is so much fun
+]0;lbw1009@agate:~/cs620[?2004h[32mlbw1009@agate[0m:[32m~/cs620[0m$[0m ln temp.txt temp2.txt
+[?2004l]0;lbw1009@agate:~/cs620[?2004h[32mlbw1009@agate[0m:[32m~/cs620[0m$[0m ls
+[?2004ltemp2.txt  tempcompy.c  tempcopy.txt  temp.txt
+]0;lbw1009@agate:~/cs620[?2004h[32mlbw1009@agate[0m:[32m~/cs620[0m$[0m more temp2`[K.txt 
+[?2004llinux is so much fun
+]0;lbw1009@agate:~/cs620[?2004h[32mlbw1009@agate[0m:[32m~/cs620[0m$[0m more temp.txt 
+[?2004llinux is so much fun
+]0;lbw1009@agate:~/cs620[?2004h[32mlbw1009@agate[0m:[32m~/cs620[0m$[0m less temp.txt
+[?2004l[?1049h[22;0;0t[41;1H[?1h=linux is so much fun
+[7mtemp.txt (END)[27m[K[K[K[7m(END)[27m[K[K[K[7m(END)[27m[K[K[K[7m(END)[27m[K[K[K[7m(END)[27m[K[K...skipping...
+linux is so much fun
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[7m(END)[27m[K[K[7m(END)[27m[K[K[K[7m(END)[27m[K[K[K[7m(END)[27m[K[K[K[7m(END)[27m[K[K[K[7m(END)[27m[K[K [KESCESC[H[2J[H[H[2J[Hlinux is so much fun
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[7m(END)[27m[K[K[?1l>[?1049l[23;0;0t
+[1]+  Stopped                 less temp.txt
+]0;lbw1009@agate:~/cs620[?2004h[32mlbw1009@agate[0m:[32m~/cs620[0m$[0m cat tempcopy.txt
+[?2004llinux is so much fun
+]0;lbw1009@agate:~/cs620[?2004h[32mlbw1009@agate[0m:[32m~/cs620[0m$[0m cat temp2.txt
+[?2004llinux is so much fun
+]0;lbw1009@agate:~/cs620[?2004h[32mlbw1009@agate[0m:[32m~/cs620[0m$[0m ls-l
+[?2004lbash: ls-l: command not found
+]0;lbw1009@agate:~/cs620[?2004h[32mlbw1009@agate[0m:[32m~/cs620[0m$[0m ls -l
+[?2004ltotal 16
+-rw------- 2 lbw1009 cs410 21 Aug 29 19:21 temp2.txt
+-rw------- 1 lbw1009 cs410 21 Aug 29 19:21 tempcompy.c
+-rw------- 1 lbw1009 cs410 21 Aug 29 19:21 tempcopy.txt
+-rw------- 2 lbw1009 cs410 21 Aug 29 19:21 temp.txt
+]0;lbw1009@agate:~/cs620[?2004h[32mlbw1009@agate[0m:[32m~/cs620[0m$[0m ls -l | grep txt
+[?2004l-rw------- 2 lbw1009 cs410 21 Aug 29 19:21 temp2.[01;31m[Ktxt[m[K
+-rw------- 1 lbw1009 cs410 21 Aug 29 19:21 tempcopy.[01;31m[Ktxt[m[K
+-rw------- 2 lbw1009 cs410 21 Aug 29 19:21 temp.[01;31m[Ktxt[m[K
+]0;lbw1009@agate:~/cs620[?2004h[32mlbw1009@agate[0m:[32m~/cs620[0m$[0m ls-l *.txt
+[?2004lbash: ls-l: command not found
+]0;lbw1009@agate:~/cs620[?2004h[32mlbw1009@agate[0m:[32m~/cs620[0m$[0m ls-l *.txt[1@ 
+[?2004l-rw------- 2 lbw1009 cs410 21 Aug 29 19:21 temp2.txt
+-rw------- 1 lbw1009 cs410 21 Aug 29 19:21 tempcopy.txt
+-rw------- 2 lbw1009 cs410 21 Aug 29 19:21 temp.txt
+]0;lbw1009@agate:~/cs620[?2004h[32mlbw1009@agate[0m:[32m~/cs620[0m$[0m date
+[?2004lThu Aug 29 07:24:12 PM EDT 2024
+]0;lbw1009@agate:~/cs620[?2004h[32mlbw1009@agate[0m:[32m~/cs620[0m$[0m ls -l | cut -c11=[K-
+[?2004l
+ 2 lbw1009 cs410 21 Aug 29 19:21 temp2.txt
+ 1 lbw1009 cs410 21 Aug 29 19:21 tempcompy.c
+ 1 lbw1009 cs410 21 Aug 29 19:21 tempcopy.txt
+ 2 lbw1009 cs410 21 Aug 29 19:21 temp.txt
+]0;lbw1009@agate:~/cs620[?2004h[32mlbw1009@agate[0m:[32m~/cs620[0m$[0m cat temp.txt |
+[?2004l[?2004h> ^C[?2004l[?2004h[?2004l
+]0;lbw1009@agate:~/cs620[?2004h[32mlbw1009@agate[0m:[32m~/cs620[0m$[0m cat temp.txt |
+[?2004l[?2004h> ^C[?2004l[?2004h[?2004l
+]0;lbw1009@agate:~/cs620[?2004h[32mlbw1009@agate[0m:[32m~/cs620[0m$[0m cat temp.txt | ger[K[Krep "done"
+[?2004l]0;lbw1009@agate:~/cs620[?2004h[32mlbw1009@agate[0m:[32m~/cs620[0m$[0m grep "done" temp.txt
+[?2004l]0;lbw1009@agate:~/cs620[?2004h[32mlbw1009@agate[0m:[32m~/cs620[0m$[0m find . | more
+[?2004l.
+./tempcopy.txt
+./temp2.txt
+./tempcompy.c
+./temp.txt
+]0;lbw1009@agate:~/cs620[?2004h[32mlbw1009@agate[0m:[32m~/cs620[0m$[0m find . -type f -name "*.txt"
+[?2004l./tempcopy.txt
+./temp2.txt
+./temp.txt
+]0;lbw1009@agate:~/cs620[?2004h[32mlbw1009@agate[0m:[32m~/cs620[0m$[0m whereis open
+[?2004lopen: /usr/share/man/man2/open.2.gz /usr/share/man/man3/open.3pm.gz
+]0;lbw1009@agate:~/cs620[?2004h[32mlbw1009@agate[0m:[32m~/cs620[0m$[0m which -a echo
+[?2004l/usr/bin/echo
+]0;lbw1009@agate:~/cs620[?2004h[32mlbw1009@agate[0m:[32m~/cs620[0m$[0m jobs
+[?2004l[1]+  Stopped                 less temp.txt
+]0;lbw1009@agate:~/cs620[?2004h[32mlbw1009@agate[0m:[32m~/cs620[0m$[0m ping -c 3 age[Kate.cs.unh.edu
+[?2004lPING agate.cs.unh.edu (132.177.4.36) 56(84) bytes of data.
+64 bytes from agate.cs.unh.edu (132.177.4.36): icmp_seq=1 ttl=64 time=0.045 ms
+64 bytes from agate.cs.unh.edu (132.177.4.36): icmp_seq=2 ttl=64 time=0.045 ms
+64 bytes from agate.cs.unh.edu (132.177.4.36): icmp_seq=3 ttl=64 time=0.043 ms
+
+--- agate.cs.unh.edu ping statistics ---
+3 packets transmitted, 3 received, 0% packet loss, time 2039ms
+rtt min/avg/max/mdev = 0.043/0.044/0.045/0.000 ms
+]0;lbw1009@agate:~/cs620[?2004h[32mlbw1009@agate[0m:[32m~/cs620[0m$[0m rm temp.txt
+[?2004lrm: remove regular file 'temp.txt'? y
+]0;lbw1009@agate:~/cs620[?2004h[32mlbw1009@agate[0m:[32m~/cs620[0m$[0m rm tempcopy.txt
+[?2004lrm: remove regular file 'tempcopy.txt'? y^X^C
+]0;lbw1009@agate:~/cs620[?2004h[32mlbw1009@agate[0m:[32m~/cs620[0m$[0m rm tempcopyl[K.txt temp2.txt
+[?2004lrm: remove regular file 'tempcopy.txt'? y
+rm: remove regular file 'temp2.txt'? y
+]0;lbw1009@agate:~/cs620[?2004h[32mlbw1009@agate[0m:[32m~/cs620[0m$[0m rm rempcopy[K[Krm tempcopy.c
+[?2004lrm: cannot remove 'tempcopy.c': No such file or directory
+]0;lbw1009@agate:~/cs620[?2004h[32mlbw1009@agate[0m:[32m~/cs620[0m$[0m rm tempcopy.cmpy.c
+[?2004lrm: remove regular file 'tempcompy.c'? y
+]0;lbw1009@agate:~/cs620[?2004h[32mlbw1009@agate[0m:[32m~/cs620[0m$[0m cd ..
+[?2004l]0;lbw1009@agate:~[?2004h[32mlbw1009@agate[0m:[32m~[0m$[0m rmdir cs620/
+[?2004l]0;lbw1009@agate:~[?2004h[32mlbw1009@agate[0m:[32m~[0m$[0m exit
+[?2004lexit
+There are stopped jobs.
+]0;lbw1009@agate:~[?2004h[32mlbw1009@agate[0m:[32m~[0m$[0m ls
+[?2004l[0m[01;34mCS420[0m  [01;34mcs527[0m  linux.txt
+]0;lbw1009@agate:~[?2004h[32mlbw1009@agate[0m:[32m~[0m$[0m cat linux.txt 
+[?2004lScript started on 2024-08-29 19:20:40-04:00 [TERM="xterm-256color" TTY="/dev/pts/5" COLUMNS="253" LINES="41"]
+]0;lbw1009@agate:~[?2004h[32mlbw1009@agate[0m:[32m~[0m$[0m whoami
+[?2004llbw1009
+]0;lbw1009@agate:~[?2004h[32mlbw1009@agate[0m:[32m~[0m$[0m pwd
+[?2004l/home/csu/lbw1009
+]0;lbw1009@agate:~[?2004h[32mlbw1009@agate[0m:[32m~[0m$[0m ls
+[?2004l[0m[01;34mCS420[0m  [01;34mcs527[0m  linux.txt
+]0;lbw1009@agate:~[?2004h[32mlbw1009@agate[0m:[32m~[0m$[0m mkdir cs620
+[?2004l]0;lbw1009@agate:~[?2004h[32mlbw1009@agate[0m:[32m~[0m$[0m ls
+[?2004l[0m[01;34mCS420[0m  [01;34mcs527[0m  [01;34mcs620[0m  linux.txt
+]0;lbw1009@agate:~[?2004h[32mlbw1009@agate[0m:[32m~[0m$[0m pwd
+[?2004l/home/csu/lbw1009
+]0;lbw1009@agate:~[?2004h[32mlbw1009@agate[0m:[32m~[0m$[0m cd cs620/
+[?2004l]0;lbw1009@agate:~/cs620[?2004h[32mlbw1009@agate[0m:[32m~/cs620[0m$[0m echo "linux is so much fun" > temp.txt
+[?2004l]0;lbw1009@agate:~/cs620[?2004h[32mlbw1009@agate[0m:[32m~/cs620[0m$[0m cat tre[K[Kemp.txt 
+[?2004llinux is so much fun
+]0;lbw1009@agate:~/cs620[?2004h[32mlbw1009@agate[0m:[32m~/cs620[0m$[0m cp temp.txt tempcopy.txt
+[?2004l]0;lbw1009@agate:~/cs620[?2004h[32mlbw1009@agate[0m:[32m~/cs620[0m$[0m cp temp.txt tempcompy.c
+[?2004l]0;lbw1009@agate:~/cs620[?2004h[32mlbw1009@agate[0m:[32m~/cs620[0m$[0m cat tempcopy.txt
+[?2004llinux is so much fun
+]0;lbw1009@agate:~/cs620[?2004h[32mlbw1009@agate[0m:[32m~/cs620[0m$[0m ln temp.txt temp2.txt
+[?2004l]0;lbw1009@agate:~/cs620[?2004h[32mlbw1009@agate[0m:[32m~/cs620[0m$[0m ls
+[?2004ltemp2.txt  tempcompy.c  tempcopy.txt  temp.txt
+]0;lbw1009@agate:~/cs620[?2004h[32mlbw1009@agate[0m:[32m~/cs620[0m$[0m more temp2`[K.txt 
+[?2004llinux is so much fun
+]0;lbw1009@agate:~/cs620[?2004h[32mlbw1009@agate[0m:[32m~/cs620[0m$[0m more temp.txt 
+[?2004llinux is so much fun
+]0;lbw1009@agate:~/cs620[?2004h[32mlbw1009@agate[0m:[32m~/cs620[0m$[0m less temp.txt
+[?2004l[?1049h[22;0;0t[41;1H[?1h=linux is so much fun
+[7mtemp.txt (END)[27m[K[K[K[7m(END)[27m[K[K[K[7m(END)[27m[K[K[K[7m(END)[27m[K[K[K[7m(END)[27m[K[K...skipping...
+linux is so much fun
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[7m(END)[27m[K[K[7m(END)[27m[K[K[K[7m(END)[27m[K[K[K[7m(END)[27m[K[K[K[7m(END)[27m[K[K[K[7m(END)[27m[K[K [KESCESC[H[2J[H[H[2J[Hlinux is so much fun
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[7m(END)[27m[K[K[?1l>[?1049l[23;0;0t
+[1]+  Stopped                 less temp.txt
+]0;lbw1009@agate:~/cs620[?2004h[32mlbw1009@agate[0m:[32m~/cs620[0m$[0m cat tempcopy.txt
+[?2004llinux is so much fun
+]0;lbw1009@agate:~/cs620[?2004h[32mlbw1009@agate[0m:[32m~/cs620[0m$[0m cat temp2.txt
+[?2004llinux is so much fun
+]0;lbw1009@agate:~/cs620[?2004h[32mlbw1009@agate[0m:[32m~/cs620[0m$[0m ls-l
+[?2004lbash: ls-l: command not found
+]0;lbw1009@agate:~/cs620[?2004h[32mlbw1009@agate[0m:[32m~/cs620[0m$[0m ls -l
+[?2004ltotal 16
+-rw------- 2 lbw1009 cs410 21 Aug 29 19:21 temp2.txt
+-rw------- 1 lbw1009 cs410 21 Aug 29 19:21 tempcompy.c
+-rw------- 1 lbw1009 cs410 21 Aug 29 19:21 tempcopy.txt
+-rw------- 2 lbw1009 cs410 21 Aug 29 19:21 temp.txt
+]0;lbw1009@agate:~/cs620[?2004h[32mlbw1009@agate[0m:[32m~/cs620[0m$[0m ls -l | grep txt
+[?2004l-rw------- 2 lbw1009 cs410 21 Aug 29 19:21 temp2.[01;31m[Ktxt[m[K
+-rw------- 1 lbw1009 cs410 21 Aug 29 19:21 tempcopy.[01;31m[Ktxt[m[K
+-rw------- 2 lbw1009 cs410 21 Aug 29 19:21 temp.[01;31m[Ktxt[m[K
+]0;lbw1009@agate:~/cs620[?2004h[32mlbw1009@agate[0m:[32m~/cs620[0m$[0m ls-l *.txt
+[?2004lbash: ls-l: command not found
+]0;lbw1009@agate:~/cs620[?2004h[32mlbw1009@agate[0m:[32m~/cs620[0m$[0m ls-l *.txt[1@ 
+[?2004l-rw------- 2 lbw1009 cs410 21 Aug 29 19:21 temp2.txt
+-rw------- 1 lbw1009 cs410 21 Aug 29 19:21 tempcopy.txt
+-rw------- 2 lbw1009 cs410 21 Aug 29 19:21 temp.txt
+]0;lbw1009@agate:~/cs620[?2004h[32mlbw1009@agate[0m:[32m~/cs620[0m$[0m date
+[?2004lThu Aug 29 07:24:12 PM EDT 2024
+]0;lbw1009@agate:~/cs620[?2004h[32mlbw1009@agate[0m:[32m~/cs620[0m$[0m ls -l | cut -c11=[K-
+[?2004l
+ 2 lbw1009 cs410 21 Aug 29 19:21 temp2.txt
+ 1 lbw1009 cs410 21 Aug 29 19:21 tempcompy.c
+ 1 lbw1009 cs410 21 Aug 29 19:21 tempcopy.txt
+ 2 lbw1009 cs410 21 Aug 29 19:21 temp.txt
+]0;lbw1009@agate:~/cs620[?2004h[32mlbw1009@agate[0m:[32m~/cs620[0m$[0m cat temp.txt |
+[?2004l[?2004h> ^C[?2004l[?2004h[?2004l
+]0;lbw1009@agate:~/cs620[?2004h[32mlbw1009@agate[0m:[32m~/cs620[0m$[0m cat temp.txt |
+[?2004l[?2004h> ^C[?2004l[?2004h[?2004l
+]0;lbw1009@agate:~/cs620[?2004h[32mlbw1009@agate[0m:[32m~/cs620[0m$[0m cat temp.txt | ger[K[Krep "done"
+[?2004l]0;lbw1009@agate:~/cs620[?2004h[32mlbw1009@agate[0m:[32m~/cs620[0m$[0m grep "done" temp.txt
+[?2004l]0;lbw1009@agate:~/cs620[?2004h[32mlbw1009@agate[0m:[32m~/cs620[0m$[0m find . | more
+[?2004l.
+./tempcopy.txt
+./temp2.txt
+./tempcompy.c
+./temp.txt
+]0;lbw1009@agate:~/cs620[?2004h[32mlbw1009@agate[0m:[32m~/cs620[0m$[0m find . -type f -name "*.txt"
+[?2004l./tempcopy.txt
+./temp2.txt
+./temp.txt
+]0;lbw1009@agate:~/cs620[?2004h[32mlbw1009@agate[0m:[32m~/cs620[0m$[0m whereis open
+[?2004lopen: /usr/share/man/man2/open.2.gz /usr/share/man/man3/open.3pm.gz
+]0;lbw1009@agate:~/cs620[?2004h[32mlbw1009@agate[0m:[32m~/cs620[0m$[0m which -a echo
+[?2004l/usr/bin/echo
+]0;lbw1009@agate:~/cs620[?2004h[32mlbw1009@agate[0m:[32m~/cs620[0m$[0m jobs
+[?2004l[1]+  Stopped                 less temp.txt
+]0;lbw1009@agate:~/cs620[?2004h[32mlbw1009@agate[0m:[32m~/cs620[0m$[0m ping -c 3 age[Kate.cs.unh.edu
+[?2004lPING agate.cs.unh.edu (132.177.4.36) 56(84) bytes of data.
+64 bytes from agate.cs.unh.edu (132.177.4.36): icmp_seq=1 ttl=64 time=0.045 ms
+64 bytes from agate.cs.unh.edu (132.177.4.36): icmp_seq=2 ttl=64 time=0.045 ms
+64 bytes from agate.cs.unh.edu (132.177.4.36): icmp_seq=3 ttl=64 time=0.043 ms
+
+--- agate.cs.unh.edu ping statistics ---
+3 packets transmitted, 3 received, 0% packet loss, time 2039ms
+rtt min/avg/max/mdev = 0.043/0.044/0.045/0.000 ms
+]0;lbw1009@agate:~/cs620[?2004h[32mlbw1009@agate[0m:[32m~/cs620[0m$[0m rm temp.txt
+[?2004lrm: remove regular file 'temp.txt'? y
+]0;lbw1009@agate:~/cs620[?2004h[32mlbw1009@agate[0m:[32m~/cs620[0m$[0m rm tempcopy.txt
+[?2004lrm: remove regular file 'tempcopy.txt'? y^X^C
+]0;lbw1009@agate:~/cs620[?2004h[32mlbw1009@agate[0m:[32m~/cs620[0m$[0m rm tempcopyl[K.txt temp2.txt
+[?2004lrm: remove regular file 'tempcopy.txt'? y
+rm: remove regular file 'temp2.txt'? y
+]0;lbw1009@agate:~/cs620[?2004h[32mlbw1009@agate[0m:[32m~/cs620[0m$[0m rm rempcopy[K[Krm tempcopy.c
+[?2004lrm: cannot remove 'tempcopy.c': No such file or directory
+]0;lbw1009@agate:~/cs620[?2004h[32mlbw1009@agate[0m:[32m~/cs620[0m$[0m rm tempcopy.cmpy.c
+[?2004lrm: remove regular file 'tempcompy.c'? y
+]0;lbw1009@agate:~/cs620[?2004h[32mlbw1009@agate[0m:[32m~/cs620[0m$[0m cd ..
+[?2004l]0;lbw1009@agate:~[?2004h[32mlbw1009@agate[0m:[32m~[0m$[0m rmdir cs620/
+[?2004l]0;lbw1009@agate:~[?2004h[32mlbw1009@agate[0m:[32m~[0m$[0m exit
+[?2004lexit
+There are stopped jobs.
+]0;lbw1009@agate:~[?2004h[32mlbw1009@agate[0m:[32m~[0m$[0m ls
+[?2004l[0m[01;34mCS420[0m  [01;34mcs527[0m  linux.txt
+]0;lbw1009@agate:~[?2004h[32mlbw1009@agate[0m:[32m~[0m$[0m cat linux.txt 
+[?2004lScript started on 2024-08-29 19:20:40-04:00 [TERM="xterm-256color" TTY="/dev/pts/5" COLUMNS="253" LINES="41"]
+]0;lbw1009@agate:~[?2004h[32mlbw1009@agate[0m:[32m~[0m$[0m whoami
+[?2004llbw1009
+]0;lbw1009@agate:~[?2004h[32mlbw1009@agate[0m:[32m~[0m$[0m pwd
+[?2004l/home/csu/lbw1009
+]0;lbw1009@agate:~[?2004h[32mlbw1009@agate[0m:[32m~[0m$[0m ls
+[?2004l[0m[01;34mCS420[0m  [01;34mcs527[0m  linux.txt
+]0;lbw1009@agate:~[?2004h[32mlbw1009@agate[0m:[32m~[0m$[0m mkdir cs620
+[?2004l]0;lbw1009@agate:~[?2004h[32mlbw1009@agate[0m:[32m~[0m$[0m ls
+[?2004l[0m[01;34mCS420[0m  [01;34mcs527[0m  [01;34mcs620[0m  linux.txt
+]0;lbw1009@agate:~[?2004h[32mlbw1009@agate[0m:[32m~[0m$[0m pwd
+[?2004l/home/csu/lbw1009
+]0;lbw1009@agate:~[?2004h[32mlbw1009@agate[0m:[32m~[0m$[0m cd cs620/
+[?2004l]0;lbw1009@agate:~/cs620[?2004h[32mlbw1009@agate[0m:[32m~/cs620[0m$[0m echo "linux is so much fun" > temp.txt
+[?2004l]0;lbw1009@agate:~/cs620[?2004h[32mlbw1009@agate[0m:[32m~/cs620[0m$[0m cat tre[K[Kemp.txt 
+[?2004llinux is so much fun
+]0;lbw1009@agate:~/cs620[?2004h[32mlbw1009@agate[0m:[32m~/cs620[0m$[0m cp temp.txt tempcopy.txt
+[?2004l]0;lbw1009@agate:~/cs620[?2004h[32mlbw1009@agate[0m:[32m~/cs620[0m$[0m cp temp.txt tempcompy.c
+[?2004l]0;lbw1009@agate:~/cs620[?2004h[32mlbw1009@agate[0m:[32m~/cs620[0m$[0m cat tempcopy.txt
+[?2004llinux is so much fun
+]0;lbw1009@agate:~/cs620[?2004h[32mlbw1009@agate[0m:[32m~/cs620[0m$[0m ln temp.txt temp2.txt
+[?2004l]0;lbw1009@agate:~/cs620[?2004h[32mlbw1009@agate[0m:[32m~/cs620[0m$[0m ls
+[?2004ltemp2.txt  tempcompy.c  tempcopy.txt  temp.txt
+]0;lbw1009@agate:~/cs620[?2004h[32mlbw1009@agate[0m:[32m~/cs620[0m$[0m more temp2`[K.txt 
+[?2004llinux is so much fun
+]0;lbw1009@agate:~/cs620[?2004h[32mlbw1009@agate[0m:[32m~/cs620[0m$[0m more temp.txt 
+[?2004llinux is so much fun
+]0;lbw1009@agate:~/cs620[?2004h[32mlbw1009@agate[0m:[32m~/cs620[0m$[0m less temp.txt
+[?2004l[?1049h[22;0;0t[41;1H[?1h=linux is so much fun
+[7mtemp.txt (END)[27m[K[K[K[7m(END)[27m[K[K[K[7m(END)[27m[K[K[K[7m(END)[27m[K[K[K[7m(END)[27m[K[K...skipping...
+linux is so much fun
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[7m(END)[27m[K[K[7m(END)[27m[K[K[K[7m(END)[27m[K[K[K[7m(END)[27m[K[K[K[7m(END)[27m[K[K[K[7m(END)[27m[K[K [KESCESC[H[2J[H[H[2J[Hlinux is so much fun
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[7m(END)[27m[K[K[?1l>[?1049l[23;0;0t
+[1]+  Stopped                 less temp.txt
+]0;lbw1009@agate:~/cs620[?2004h[32mlbw1009@agate[0m:[32m~/cs620[0m$[0m cat tempcopy.txt
+[?2004llinux is so much fun
+]0;lbw1009@agate:~/cs620[?2004h[32mlbw1009@agate[0m:[32m~/cs620[0m$[0m cat temp2.txt
+[?2004llinux is so much fun
+]0;lbw1009@agate:~/cs620[?2004h[32mlbw1009@agate[0m:[32m~/cs620[0m$[0m ls-l
+[?2004lbash: ls-l: command not found
+]0;lbw1009@agate:~/cs620[?2004h[32mlbw1009@agate[0m:[32m~/cs620[0m$[0m ls -l
+[?2004ltotal 16
+-rw------- 2 lbw1009 cs410 21 Aug 29 19:21 temp2.txt
+-rw------- 1 lbw1009 cs410 21 Aug 29 19:21 tempcompy.c
+-rw------- 1 lbw1009 cs410 21 Aug 29 19:21 tempcopy.txt
+-rw------- 2 lbw1009 cs410 21 Aug 29 19:21 temp.txt
+]0;lbw1009@agate:~/cs620[?2004h[32mlbw1009@agate[0m:[32m~/cs620[0m$[0m ls -l | grep txt
+[?2004l-rw------- 2 lbw1009 cs410 21 Aug 29 19:21 temp2.[01;31m[Ktxt[m[K
+-rw------- 1 lbw1009 cs410 21 Aug 29 19:21 tempcopy.[01;31m[Ktxt[m[K
+-rw------- 2 lbw1009 cs410 21 Aug 29 19:21 temp.[01;31m[Ktxt[m[K
+]0;lbw1009@agate:~/cs620[?2004h[32mlbw1009@agate[0m:[32m~/cs620[0m$[0m ls-l *.txt
+[?2004lbash: ls-l: command not found
+]0;lbw1009@agate:~/cs620[?2004h[32mlbw1009@agate[0m:[32m~/cs620[0m$[0m ls-l *.txt[1@ 
+[?2004l-rw------- 2 lbw1009 cs410 21 Aug 29 19:21 temp2.txt
+-rw------- 1 lbw1009 cs410 21 Aug 29 19:21 tempcopy.txt
+-rw------- 2 lbw1009 cs410 21 Aug 29 19:21 temp.txt
+]0;lbw1009@agate:~/cs620[?2004h[32mlbw1009@agate[0m:[32m~/cs620[0m$[0m date
+[?2004lThu Aug 29 07:24:12 PM EDT 2024
+]0;lbw1009@agate:~/cs620[?2004h[32mlbw1009@agate[0m:[32m~/cs620[0m$[0m ls -l | cut -c11=[K-
+[?2004l
+ 2 lbw1009 cs410 21 Aug 29 19:21 temp2.txt
+ 1 lbw1009 cs410 21 Aug 29 19:21 tempcompy.c
+ 1 lbw1009 cs410 21 Aug 29 19:21 tempcopy.txt
+ 2 lbw1009 cs410 21 Aug 29 19:21 temp.txt
+]0;lbw1009@agate:~/cs620[?2004h[32mlbw1009@agate[0m:[32m~/cs620[0m$[0m cat temp.txt |
+[?2004l[?2004h> ^C[?2004l[?2004h[?2004l
+]0;lbw1009@agate:~/cs620[?2004h[32mlbw1009@agate[0m:[32m~/cs620[0m$[0m cat temp.txt |
+[?2004l[?2004h> ^C[?2004l[?2004h[?2004l
+]0;lbw1009@agate:~/cs620[?2004h[32mlbw1009@agate[0m:[32m~/cs620[0m$[0m cat temp.txt | ger[K[Krep "done"
+[?2004l]0;lbw1009@agate:~/cs620[?2004h[32mlbw1009@agate[0m:[32m~/cs620[0m$[0m grep "done" temp.txt
+[?2004l]0;lbw1009@agate:~/cs620[?2004h[32mlbw1009@agate[0m:[32m~/cs620[0m$[0m find . | more
+[?2004l.
+./tempcopy.txt
+./temp2.txt
+./tempcompy.c
+./temp.txt
+]0;lbw1009@agate:~/cs620[?2004h[32mlbw1009@agate[0m:[32m~/cs620[0m$[0m find . -type f -name "*.txt"
+[?2004l./tempcopy.txt
+./temp2.txt
+./temp.txt
+]0;lbw1009@agate:~/cs620[?2004h[32mlbw1009@agate[0m:[32m~/cs620[0m$[0m whereis open
+[?2004lopen: /usr/share/man/man2/open.2.gz /usr/share/man/man3/open.3pm.gz
+]0;lbw1009@agate:~/cs620[?2004h[32mlbw1009@agate[0m:[32m~/cs620[0m$[0m which -a echo
+[?2004l/usr/bin/echo
+]0;lbw1009@agate:~/cs620[?2004h[32mlbw1009@agate[0m:[32m~/cs620[0m$[0m jobs
+[?2004l[1]+  Stopped                 less temp.txt
+]0;lbw1009@agate:~/cs620[?2004h[32mlbw1009@agate[0m:[32m~/cs620[0m$[0m ping -c 3 age[Kate.cs.unh.edu
+[?2004lPING agate.cs.unh.edu (132.177.4.36) 56(84) bytes of data.
+64 bytes from agate.cs.unh.edu (132.177.4.36): icmp_seq=1 ttl=64 time=0.045 ms
+64 bytes from agate.cs.unh.edu (132.177.4.36): icmp_seq=2 ttl=64 time=0.045 ms
+64 bytes from agate.cs.unh.edu (132.177.4.36): icmp_seq=3 ttl=64 time=0.043 ms
+
+--- agate.cs.unh.edu ping statistics ---
+3 packets transmitted, 3 received, 0% packet loss, time 2039ms
+rtt min/avg/max/mdev = 0.043/0.044/0.045/0.000 ms
+]0;lbw1009@agate:~/cs620[?2004h[32mlbw1009@agate[0m:[32m~/cs620[0m$[0m rm temp.txt
+[?2004lrm: remove regular file 'temp.txt'? y
+]0;lbw1009@agate:~/cs620[?2004h[32mlbw1009@agate[0m:[32m~/cs620[0m$[0m rm tempcopy.txt
+[?2004lrm: remove regular file 'tempcopy.txt'? y^X^C
+]0;lbw1009@agate:~/cs620[?2004h[32mlbw1009@agate[0m:[32m~/cs620[0m$[0m rm tempcopyl[K.txt temp2.txt
+[?2004lrm: remove regular file 'tempcopy.txt'? y
+rm: remove regular file 'temp2.txt'? y
+
