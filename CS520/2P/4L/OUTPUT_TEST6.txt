@@ -1,0 +1,7 @@
+symtabLookup failed for MAXI!
+MAX = 92
+symtabLookup failed for MINI!
+Iterator returned DONALD = -33
+Iterator returned PLUTO = 32
+Iterator returned DAISY = -55
+Iterator returned MAX = 92

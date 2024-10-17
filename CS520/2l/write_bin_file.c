@@ -7,8 +7,9 @@ int main() {
     putc(0xfe, fp);
     putc(0x00, fp);
     putc(0x00, fp);
-    putc(0x99, fp);
     putc(0xa9, fp);
+    putc(0x99, fp);
+    
     putc(0x00, fp);
     putc(0x00, fp);
     
