@@ -1,0 +1,5 @@
+sum is 32640 (should be 32640)
+
+Number of page faults: 124
+Number of disk writes: 64
+

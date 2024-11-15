@@ -1,0 +1,1982 @@
+Sample trace for sum.c test driver
+(shows trace log sent to stderr for every
+memory access: Shows accessing (VM Page number, write=1/read=0) 
+
+accessVM(0, 1) at timestamp 1
+virtual page 0
+location 0
+accessVM(1, 1) at timestamp 2
+virtual page 0
+location 0
+accessVM(2, 1) at timestamp 3
+virtual page 0
+location 0
+accessVM(3, 1) at timestamp 4
+virtual page 0
+location 0
+accessVM(4, 1) at timestamp 5
+virtual page 1
+location 1
+accessVM(5, 1) at timestamp 6
+virtual page 1
+location 1
+accessVM(6, 1) at timestamp 7
+virtual page 1
+location 1
+accessVM(7, 1) at timestamp 8
+virtual page 1
+location 1
+accessVM(8, 1) at timestamp 9
+virtual page 2
+location 2
+accessVM(9, 1) at timestamp 10
+virtual page 2
+location 2
+accessVM(10, 1) at timestamp 11
+virtual page 2
+location 2
+accessVM(11, 1) at timestamp 12
+virtual page 2
+location 2
+accessVM(12, 1) at timestamp 13
+virtual page 3
+location 3
+accessVM(13, 1) at timestamp 14
+virtual page 3
+location 3
+accessVM(14, 1) at timestamp 15
+virtual page 3
+location 3
+accessVM(15, 1) at timestamp 16
+virtual page 3
+location 3
+accessVM(16, 1) at timestamp 17
+virtual page 4
+location -1
+page fault for 16 (1)
+replacing (RR) ppage 0
+handlePageFault: replacing page 0 in slot 0
+handlePageFault: old page is dirty
+accessVM(17, 1) at timestamp 18
+virtual page 4
+location 0
+accessVM(18, 1) at timestamp 19
+virtual page 4
+location 0
+accessVM(19, 1) at timestamp 20
+virtual page 4
+location 0
+accessVM(20, 1) at timestamp 21
+virtual page 5
+location -1
+page fault for 20 (1)
+replacing (RR) ppage 1
+handlePageFault: replacing page 1 in slot 1
+handlePageFault: old page is dirty
+accessVM(21, 1) at timestamp 22
+virtual page 5
+location 1
+accessVM(22, 1) at timestamp 23
+virtual page 5
+location 1
+accessVM(23, 1) at timestamp 24
+virtual page 5
+location 1
+accessVM(24, 1) at timestamp 25
+virtual page 6
+location -1
+page fault for 24 (1)
+replacing (RR) ppage 2
+handlePageFault: replacing page 2 in slot 2
+handlePageFault: old page is dirty
+accessVM(25, 1) at timestamp 26
+virtual page 6
+location 2
+accessVM(26, 1) at timestamp 27
+virtual page 6
+location 2
+accessVM(27, 1) at timestamp 28
+virtual page 6
+location 2
+accessVM(28, 1) at timestamp 29
+virtual page 7
+location -1
+page fault for 28 (1)
+replacing (RR) ppage 3
+handlePageFault: replacing page 3 in slot 3
+handlePageFault: old page is dirty
+accessVM(29, 1) at timestamp 30
+virtual page 7
+location 3
+accessVM(30, 1) at timestamp 31
+virtual page 7
+location 3
+accessVM(31, 1) at timestamp 32
+virtual page 7
+location 3
+accessVM(32, 1) at timestamp 33
+virtual page 8
+location -1
+page fault for 32 (1)
+replacing (RR) ppage 0
+handlePageFault: replacing page 4 in slot 0
+handlePageFault: old page is dirty
+accessVM(33, 1) at timestamp 34
+virtual page 8
+location 0
+accessVM(34, 1) at timestamp 35
+virtual page 8
+location 0
+accessVM(35, 1) at timestamp 36
+virtual page 8
+location 0
+accessVM(36, 1) at timestamp 37
+virtual page 9
+location -1
+page fault for 36 (1)
+replacing (RR) ppage 1
+handlePageFault: replacing page 5 in slot 1
+handlePageFault: old page is dirty
+accessVM(37, 1) at timestamp 38
+virtual page 9
+location 1
+accessVM(38, 1) at timestamp 39
+virtual page 9
+location 1
+accessVM(39, 1) at timestamp 40
+virtual page 9
+location 1
+accessVM(40, 1) at timestamp 41
+virtual page 10
+location -1
+page fault for 40 (1)
+replacing (RR) ppage 2
+handlePageFault: replacing page 6 in slot 2
+handlePageFault: old page is dirty
+accessVM(41, 1) at timestamp 42
+virtual page 10
+location 2
+accessVM(42, 1) at timestamp 43
+virtual page 10
+location 2
+accessVM(43, 1) at timestamp 44
+virtual page 10
+location 2
+accessVM(44, 1) at timestamp 45
+virtual page 11
+location -1
+page fault for 44 (1)
+replacing (RR) ppage 3
+handlePageFault: replacing page 7 in slot 3
+handlePageFault: old page is dirty
+accessVM(45, 1) at timestamp 46
+virtual page 11
+location 3
+accessVM(46, 1) at timestamp 47
+virtual page 11
+location 3
+accessVM(47, 1) at timestamp 48
+virtual page 11
+location 3
+accessVM(48, 1) at timestamp 49
+virtual page 12
+location -1
+page fault for 48 (1)
+replacing (RR) ppage 0
+handlePageFault: replacing page 8 in slot 0
+handlePageFault: old page is dirty
+accessVM(49, 1) at timestamp 50
+virtual page 12
+location 0
+accessVM(50, 1) at timestamp 51
+virtual page 12
+location 0
+accessVM(51, 1) at timestamp 52
+virtual page 12
+location 0
+accessVM(52, 1) at timestamp 53
+virtual page 13
+location -1
+page fault for 52 (1)
+replacing (RR) ppage 1
+handlePageFault: replacing page 9 in slot 1
+handlePageFault: old page is dirty
+accessVM(53, 1) at timestamp 54
+virtual page 13
+location 1
+accessVM(54, 1) at timestamp 55
+virtual page 13
+location 1
+accessVM(55, 1) at timestamp 56
+virtual page 13
+location 1
+accessVM(56, 1) at timestamp 57
+virtual page 14
+location -1
+page fault for 56 (1)
+replacing (RR) ppage 2
+handlePageFault: replacing page 10 in slot 2
+handlePageFault: old page is dirty
+accessVM(57, 1) at timestamp 58
+virtual page 14
+location 2
+accessVM(58, 1) at timestamp 59
+virtual page 14
+location 2
+accessVM(59, 1) at timestamp 60
+virtual page 14
+location 2
+accessVM(60, 1) at timestamp 61
+virtual page 15
+location -1
+page fault for 60 (1)
+replacing (RR) ppage 3
+handlePageFault: replacing page 11 in slot 3
+handlePageFault: old page is dirty
+accessVM(61, 1) at timestamp 62
+virtual page 15
+location 3
+accessVM(62, 1) at timestamp 63
+virtual page 15
+location 3
+accessVM(63, 1) at timestamp 64
+virtual page 15
+location 3
+accessVM(64, 1) at timestamp 65
+virtual page 16
+location -1
+page fault for 64 (1)
+replacing (RR) ppage 0
+handlePageFault: replacing page 12 in slot 0
+handlePageFault: old page is dirty
+accessVM(65, 1) at timestamp 66
+virtual page 16
+location 0
+accessVM(66, 1) at timestamp 67
+virtual page 16
+location 0
+accessVM(67, 1) at timestamp 68
+virtual page 16
+location 0
+accessVM(68, 1) at timestamp 69
+virtual page 17
+location -1
+page fault for 68 (1)
+replacing (RR) ppage 1
+handlePageFault: replacing page 13 in slot 1
+handlePageFault: old page is dirty
+accessVM(69, 1) at timestamp 70
+virtual page 17
+location 1
+accessVM(70, 1) at timestamp 71
+virtual page 17
+location 1
+accessVM(71, 1) at timestamp 72
+virtual page 17
+location 1
+accessVM(72, 1) at timestamp 73
+virtual page 18
+location -1
+page fault for 72 (1)
+replacing (RR) ppage 2
+handlePageFault: replacing page 14 in slot 2
+handlePageFault: old page is dirty
+accessVM(73, 1) at timestamp 74
+virtual page 18
+location 2
+accessVM(74, 1) at timestamp 75
+virtual page 18
+location 2
+accessVM(75, 1) at timestamp 76
+virtual page 18
+location 2
+accessVM(76, 1) at timestamp 77
+virtual page 19
+location -1
+page fault for 76 (1)
+replacing (RR) ppage 3
+handlePageFault: replacing page 15 in slot 3
+handlePageFault: old page is dirty
+accessVM(77, 1) at timestamp 78
+virtual page 19
+location 3
+accessVM(78, 1) at timestamp 79
+virtual page 19
+location 3
+accessVM(79, 1) at timestamp 80
+virtual page 19
+location 3
+accessVM(80, 1) at timestamp 81
+virtual page 20
+location -1
+page fault for 80 (1)
+replacing (RR) ppage 0
+handlePageFault: replacing page 16 in slot 0
+handlePageFault: old page is dirty
+accessVM(81, 1) at timestamp 82
+virtual page 20
+location 0
+accessVM(82, 1) at timestamp 83
+virtual page 20
+location 0
+accessVM(83, 1) at timestamp 84
+virtual page 20
+location 0
+accessVM(84, 1) at timestamp 85
+virtual page 21
+location -1
+page fault for 84 (1)
+replacing (RR) ppage 1
+handlePageFault: replacing page 17 in slot 1
+handlePageFault: old page is dirty
+accessVM(85, 1) at timestamp 86
+virtual page 21
+location 1
+accessVM(86, 1) at timestamp 87
+virtual page 21
+location 1
+accessVM(87, 1) at timestamp 88
+virtual page 21
+location 1
+accessVM(88, 1) at timestamp 89
+virtual page 22
+location -1
+page fault for 88 (1)
+replacing (RR) ppage 2
+handlePageFault: replacing page 18 in slot 2
+handlePageFault: old page is dirty
+accessVM(89, 1) at timestamp 90
+virtual page 22
+location 2
+accessVM(90, 1) at timestamp 91
+virtual page 22
+location 2
+accessVM(91, 1) at timestamp 92
+virtual page 22
+location 2
+accessVM(92, 1) at timestamp 93
+virtual page 23
+location -1
+page fault for 92 (1)
+replacing (RR) ppage 3
+handlePageFault: replacing page 19 in slot 3
+handlePageFault: old page is dirty
+accessVM(93, 1) at timestamp 94
+virtual page 23
+location 3
+accessVM(94, 1) at timestamp 95
+virtual page 23
+location 3
+accessVM(95, 1) at timestamp 96
+virtual page 23
+location 3
+accessVM(96, 1) at timestamp 97
+virtual page 24
+location -1
+page fault for 96 (1)
+replacing (RR) ppage 0
+handlePageFault: replacing page 20 in slot 0
+handlePageFault: old page is dirty
+accessVM(97, 1) at timestamp 98
+virtual page 24
+location 0
+accessVM(98, 1) at timestamp 99
+virtual page 24
+location 0
+accessVM(99, 1) at timestamp 100
+virtual page 24
+location 0
+accessVM(100, 1) at timestamp 101
+virtual page 25
+location -1
+page fault for 100 (1)
+replacing (RR) ppage 1
+handlePageFault: replacing page 21 in slot 1
+handlePageFault: old page is dirty
+accessVM(101, 1) at timestamp 102
+virtual page 25
+location 1
+accessVM(102, 1) at timestamp 103
+virtual page 25
+location 1
+accessVM(103, 1) at timestamp 104
+virtual page 25
+location 1
+accessVM(104, 1) at timestamp 105
+virtual page 26
+location -1
+page fault for 104 (1)
+replacing (RR) ppage 2
+handlePageFault: replacing page 22 in slot 2
+handlePageFault: old page is dirty
+accessVM(105, 1) at timestamp 106
+virtual page 26
+location 2
+accessVM(106, 1) at timestamp 107
+virtual page 26
+location 2
+accessVM(107, 1) at timestamp 108
+virtual page 26
+location 2
+accessVM(108, 1) at timestamp 109
+virtual page 27
+location -1
+page fault for 108 (1)
+replacing (RR) ppage 3
+handlePageFault: replacing page 23 in slot 3
+handlePageFault: old page is dirty
+accessVM(109, 1) at timestamp 110
+virtual page 27
+location 3
+accessVM(110, 1) at timestamp 111
+virtual page 27
+location 3
+accessVM(111, 1) at timestamp 112
+virtual page 27
+location 3
+accessVM(112, 1) at timestamp 113
+virtual page 28
+location -1
+page fault for 112 (1)
+replacing (RR) ppage 0
+handlePageFault: replacing page 24 in slot 0
+handlePageFault: old page is dirty
+accessVM(113, 1) at timestamp 114
+virtual page 28
+location 0
+accessVM(114, 1) at timestamp 115
+virtual page 28
+location 0
+accessVM(115, 1) at timestamp 116
+virtual page 28
+location 0
+accessVM(116, 1) at timestamp 117
+virtual page 29
+location -1
+page fault for 116 (1)
+replacing (RR) ppage 1
+handlePageFault: replacing page 25 in slot 1
+handlePageFault: old page is dirty
+accessVM(117, 1) at timestamp 118
+virtual page 29
+location 1
+accessVM(118, 1) at timestamp 119
+virtual page 29
+location 1
+accessVM(119, 1) at timestamp 120
+virtual page 29
+location 1
+accessVM(120, 1) at timestamp 121
+virtual page 30
+location -1
+page fault for 120 (1)
+replacing (RR) ppage 2
+handlePageFault: replacing page 26 in slot 2
+handlePageFault: old page is dirty
+accessVM(121, 1) at timestamp 122
+virtual page 30
+location 2
+accessVM(122, 1) at timestamp 123
+virtual page 30
+location 2
+accessVM(123, 1) at timestamp 124
+virtual page 30
+location 2
+accessVM(124, 1) at timestamp 125
+virtual page 31
+location -1
+page fault for 124 (1)
+replacing (RR) ppage 3
+handlePageFault: replacing page 27 in slot 3
+handlePageFault: old page is dirty
+accessVM(125, 1) at timestamp 126
+virtual page 31
+location 3
+accessVM(126, 1) at timestamp 127
+virtual page 31
+location 3
+accessVM(127, 1) at timestamp 128
+virtual page 31
+location 3
+accessVM(128, 1) at timestamp 129
+virtual page 32
+location -1
+page fault for 128 (1)
+replacing (RR) ppage 0
+handlePageFault: replacing page 28 in slot 0
+handlePageFault: old page is dirty
+accessVM(129, 1) at timestamp 130
+virtual page 32
+location 0
+accessVM(130, 1) at timestamp 131
+virtual page 32
+location 0
+accessVM(131, 1) at timestamp 132
+virtual page 32
+location 0
+accessVM(132, 1) at timestamp 133
+virtual page 33
+location -1
+page fault for 132 (1)
+replacing (RR) ppage 1
+handlePageFault: replacing page 29 in slot 1
+handlePageFault: old page is dirty
+accessVM(133, 1) at timestamp 134
+virtual page 33
+location 1
+accessVM(134, 1) at timestamp 135
+virtual page 33
+location 1
+accessVM(135, 1) at timestamp 136
+virtual page 33
+location 1
+accessVM(136, 1) at timestamp 137
+virtual page 34
+location -1
+page fault for 136 (1)
+replacing (RR) ppage 2
+handlePageFault: replacing page 30 in slot 2
+handlePageFault: old page is dirty
+accessVM(137, 1) at timestamp 138
+virtual page 34
+location 2
+accessVM(138, 1) at timestamp 139
+virtual page 34
+location 2
+accessVM(139, 1) at timestamp 140
+virtual page 34
+location 2
+accessVM(140, 1) at timestamp 141
+virtual page 35
+location -1
+page fault for 140 (1)
+replacing (RR) ppage 3
+handlePageFault: replacing page 31 in slot 3
+handlePageFault: old page is dirty
+accessVM(141, 1) at timestamp 142
+virtual page 35
+location 3
+accessVM(142, 1) at timestamp 143
+virtual page 35
+location 3
+accessVM(143, 1) at timestamp 144
+virtual page 35
+location 3
+accessVM(144, 1) at timestamp 145
+virtual page 36
+location -1
+page fault for 144 (1)
+replacing (RR) ppage 0
+handlePageFault: replacing page 32 in slot 0
+handlePageFault: old page is dirty
+accessVM(145, 1) at timestamp 146
+virtual page 36
+location 0
+accessVM(146, 1) at timestamp 147
+virtual page 36
+location 0
+accessVM(147, 1) at timestamp 148
+virtual page 36
+location 0
+accessVM(148, 1) at timestamp 149
+virtual page 37
+location -1
+page fault for 148 (1)
+replacing (RR) ppage 1
+handlePageFault: replacing page 33 in slot 1
+handlePageFault: old page is dirty
+accessVM(149, 1) at timestamp 150
+virtual page 37
+location 1
+accessVM(150, 1) at timestamp 151
+virtual page 37
+location 1
+accessVM(151, 1) at timestamp 152
+virtual page 37
+location 1
+accessVM(152, 1) at timestamp 153
+virtual page 38
+location -1
+page fault for 152 (1)
+replacing (RR) ppage 2
+handlePageFault: replacing page 34 in slot 2
+handlePageFault: old page is dirty
+accessVM(153, 1) at timestamp 154
+virtual page 38
+location 2
+accessVM(154, 1) at timestamp 155
+virtual page 38
+location 2
+accessVM(155, 1) at timestamp 156
+virtual page 38
+location 2
+accessVM(156, 1) at timestamp 157
+virtual page 39
+location -1
+page fault for 156 (1)
+replacing (RR) ppage 3
+handlePageFault: replacing page 35 in slot 3
+handlePageFault: old page is dirty
+accessVM(157, 1) at timestamp 158
+virtual page 39
+location 3
+accessVM(158, 1) at timestamp 159
+virtual page 39
+location 3
+accessVM(159, 1) at timestamp 160
+virtual page 39
+location 3
+accessVM(160, 1) at timestamp 161
+virtual page 40
+location -1
+page fault for 160 (1)
+replacing (RR) ppage 0
+handlePageFault: replacing page 36 in slot 0
+handlePageFault: old page is dirty
+accessVM(161, 1) at timestamp 162
+virtual page 40
+location 0
+accessVM(162, 1) at timestamp 163
+virtual page 40
+location 0
+accessVM(163, 1) at timestamp 164
+virtual page 40
+location 0
+accessVM(164, 1) at timestamp 165
+virtual page 41
+location -1
+page fault for 164 (1)
+replacing (RR) ppage 1
+handlePageFault: replacing page 37 in slot 1
+handlePageFault: old page is dirty
+accessVM(165, 1) at timestamp 166
+virtual page 41
+location 1
+accessVM(166, 1) at timestamp 167
+virtual page 41
+location 1
+accessVM(167, 1) at timestamp 168
+virtual page 41
+location 1
+accessVM(168, 1) at timestamp 169
+virtual page 42
+location -1
+page fault for 168 (1)
+replacing (RR) ppage 2
+handlePageFault: replacing page 38 in slot 2
+handlePageFault: old page is dirty
+accessVM(169, 1) at timestamp 170
+virtual page 42
+location 2
+accessVM(170, 1) at timestamp 171
+virtual page 42
+location 2
+accessVM(171, 1) at timestamp 172
+virtual page 42
+location 2
+accessVM(172, 1) at timestamp 173
+virtual page 43
+location -1
+page fault for 172 (1)
+replacing (RR) ppage 3
+handlePageFault: replacing page 39 in slot 3
+handlePageFault: old page is dirty
+accessVM(173, 1) at timestamp 174
+virtual page 43
+location 3
+accessVM(174, 1) at timestamp 175
+virtual page 43
+location 3
+accessVM(175, 1) at timestamp 176
+virtual page 43
+location 3
+accessVM(176, 1) at timestamp 177
+virtual page 44
+location -1
+page fault for 176 (1)
+replacing (RR) ppage 0
+handlePageFault: replacing page 40 in slot 0
+handlePageFault: old page is dirty
+accessVM(177, 1) at timestamp 178
+virtual page 44
+location 0
+accessVM(178, 1) at timestamp 179
+virtual page 44
+location 0
+accessVM(179, 1) at timestamp 180
+virtual page 44
+location 0
+accessVM(180, 1) at timestamp 181
+virtual page 45
+location -1
+page fault for 180 (1)
+replacing (RR) ppage 1
+handlePageFault: replacing page 41 in slot 1
+handlePageFault: old page is dirty
+accessVM(181, 1) at timestamp 182
+virtual page 45
+location 1
+accessVM(182, 1) at timestamp 183
+virtual page 45
+location 1
+accessVM(183, 1) at timestamp 184
+virtual page 45
+location 1
+accessVM(184, 1) at timestamp 185
+virtual page 46
+location -1
+page fault for 184 (1)
+replacing (RR) ppage 2
+handlePageFault: replacing page 42 in slot 2
+handlePageFault: old page is dirty
+accessVM(185, 1) at timestamp 186
+virtual page 46
+location 2
+accessVM(186, 1) at timestamp 187
+virtual page 46
+location 2
+accessVM(187, 1) at timestamp 188
+virtual page 46
+location 2
+accessVM(188, 1) at timestamp 189
+virtual page 47
+location -1
+page fault for 188 (1)
+replacing (RR) ppage 3
+handlePageFault: replacing page 43 in slot 3
+handlePageFault: old page is dirty
+accessVM(189, 1) at timestamp 190
+virtual page 47
+location 3
+accessVM(190, 1) at timestamp 191
+virtual page 47
+location 3
+accessVM(191, 1) at timestamp 192
+virtual page 47
+location 3
+accessVM(192, 1) at timestamp 193
+virtual page 48
+location -1
+page fault for 192 (1)
+replacing (RR) ppage 0
+handlePageFault: replacing page 44 in slot 0
+handlePageFault: old page is dirty
+accessVM(193, 1) at timestamp 194
+virtual page 48
+location 0
+accessVM(194, 1) at timestamp 195
+virtual page 48
+location 0
+accessVM(195, 1) at timestamp 196
+virtual page 48
+location 0
+accessVM(196, 1) at timestamp 197
+virtual page 49
+location -1
+page fault for 196 (1)
+replacing (RR) ppage 1
+handlePageFault: replacing page 45 in slot 1
+handlePageFault: old page is dirty
+accessVM(197, 1) at timestamp 198
+virtual page 49
+location 1
+accessVM(198, 1) at timestamp 199
+virtual page 49
+location 1
+accessVM(199, 1) at timestamp 200
+virtual page 49
+location 1
+accessVM(200, 1) at timestamp 201
+virtual page 50
+location -1
+page fault for 200 (1)
+replacing (RR) ppage 2
+handlePageFault: replacing page 46 in slot 2
+handlePageFault: old page is dirty
+accessVM(201, 1) at timestamp 202
+virtual page 50
+location 2
+accessVM(202, 1) at timestamp 203
+virtual page 50
+location 2
+accessVM(203, 1) at timestamp 204
+virtual page 50
+location 2
+accessVM(204, 1) at timestamp 205
+virtual page 51
+location -1
+page fault for 204 (1)
+replacing (RR) ppage 3
+handlePageFault: replacing page 47 in slot 3
+handlePageFault: old page is dirty
+accessVM(205, 1) at timestamp 206
+virtual page 51
+location 3
+accessVM(206, 1) at timestamp 207
+virtual page 51
+location 3
+accessVM(207, 1) at timestamp 208
+virtual page 51
+location 3
+accessVM(208, 1) at timestamp 209
+virtual page 52
+location -1
+page fault for 208 (1)
+replacing (RR) ppage 0
+handlePageFault: replacing page 48 in slot 0
+handlePageFault: old page is dirty
+accessVM(209, 1) at timestamp 210
+virtual page 52
+location 0
+accessVM(210, 1) at timestamp 211
+virtual page 52
+location 0
+accessVM(211, 1) at timestamp 212
+virtual page 52
+location 0
+accessVM(212, 1) at timestamp 213
+virtual page 53
+location -1
+page fault for 212 (1)
+replacing (RR) ppage 1
+handlePageFault: replacing page 49 in slot 1
+handlePageFault: old page is dirty
+accessVM(213, 1) at timestamp 214
+virtual page 53
+location 1
+accessVM(214, 1) at timestamp 215
+virtual page 53
+location 1
+accessVM(215, 1) at timestamp 216
+virtual page 53
+location 1
+accessVM(216, 1) at timestamp 217
+virtual page 54
+location -1
+page fault for 216 (1)
+replacing (RR) ppage 2
+handlePageFault: replacing page 50 in slot 2
+handlePageFault: old page is dirty
+accessVM(217, 1) at timestamp 218
+virtual page 54
+location 2
+accessVM(218, 1) at timestamp 219
+virtual page 54
+location 2
+accessVM(219, 1) at timestamp 220
+virtual page 54
+location 2
+accessVM(220, 1) at timestamp 221
+virtual page 55
+location -1
+page fault for 220 (1)
+replacing (RR) ppage 3
+handlePageFault: replacing page 51 in slot 3
+handlePageFault: old page is dirty
+accessVM(221, 1) at timestamp 222
+virtual page 55
+location 3
+accessVM(222, 1) at timestamp 223
+virtual page 55
+location 3
+accessVM(223, 1) at timestamp 224
+virtual page 55
+location 3
+accessVM(224, 1) at timestamp 225
+virtual page 56
+location -1
+page fault for 224 (1)
+replacing (RR) ppage 0
+handlePageFault: replacing page 52 in slot 0
+handlePageFault: old page is dirty
+accessVM(225, 1) at timestamp 226
+virtual page 56
+location 0
+accessVM(226, 1) at timestamp 227
+virtual page 56
+location 0
+accessVM(227, 1) at timestamp 228
+virtual page 56
+location 0
+accessVM(228, 1) at timestamp 229
+virtual page 57
+location -1
+page fault for 228 (1)
+replacing (RR) ppage 1
+handlePageFault: replacing page 53 in slot 1
+handlePageFault: old page is dirty
+accessVM(229, 1) at timestamp 230
+virtual page 57
+location 1
+accessVM(230, 1) at timestamp 231
+virtual page 57
+location 1
+accessVM(231, 1) at timestamp 232
+virtual page 57
+location 1
+accessVM(232, 1) at timestamp 233
+virtual page 58
+location -1
+page fault for 232 (1)
+replacing (RR) ppage 2
+handlePageFault: replacing page 54 in slot 2
+handlePageFault: old page is dirty
+accessVM(233, 1) at timestamp 234
+virtual page 58
+location 2
+accessVM(234, 1) at timestamp 235
+virtual page 58
+location 2
+accessVM(235, 1) at timestamp 236
+virtual page 58
+location 2
+accessVM(236, 1) at timestamp 237
+virtual page 59
+location -1
+page fault for 236 (1)
+replacing (RR) ppage 3
+handlePageFault: replacing page 55 in slot 3
+handlePageFault: old page is dirty
+accessVM(237, 1) at timestamp 238
+virtual page 59
+location 3
+accessVM(238, 1) at timestamp 239
+virtual page 59
+location 3
+accessVM(239, 1) at timestamp 240
+virtual page 59
+location 3
+accessVM(240, 1) at timestamp 241
+virtual page 60
+location -1
+page fault for 240 (1)
+replacing (RR) ppage 0
+handlePageFault: replacing page 56 in slot 0
+handlePageFault: old page is dirty
+accessVM(241, 1) at timestamp 242
+virtual page 60
+location 0
+accessVM(242, 1) at timestamp 243
+virtual page 60
+location 0
+accessVM(243, 1) at timestamp 244
+virtual page 60
+location 0
+accessVM(244, 1) at timestamp 245
+virtual page 61
+location -1
+page fault for 244 (1)
+replacing (RR) ppage 1
+handlePageFault: replacing page 57 in slot 1
+handlePageFault: old page is dirty
+accessVM(245, 1) at timestamp 246
+virtual page 61
+location 1
+accessVM(246, 1) at timestamp 247
+virtual page 61
+location 1
+accessVM(247, 1) at timestamp 248
+virtual page 61
+location 1
+accessVM(248, 1) at timestamp 249
+virtual page 62
+location -1
+page fault for 248 (1)
+replacing (RR) ppage 2
+handlePageFault: replacing page 58 in slot 2
+handlePageFault: old page is dirty
+accessVM(249, 1) at timestamp 250
+virtual page 62
+location 2
+accessVM(250, 1) at timestamp 251
+virtual page 62
+location 2
+accessVM(251, 1) at timestamp 252
+virtual page 62
+location 2
+accessVM(252, 1) at timestamp 253
+virtual page 63
+location -1
+page fault for 252 (1)
+replacing (RR) ppage 3
+handlePageFault: replacing page 59 in slot 3
+handlePageFault: old page is dirty
+accessVM(253, 1) at timestamp 254
+virtual page 63
+location 3
+accessVM(254, 1) at timestamp 255
+virtual page 63
+location 3
+accessVM(255, 1) at timestamp 256
+virtual page 63
+location 3
+accessVM(0, 0) at timestamp 257
+virtual page 0
+location -1
+page fault for 0 (0)
+replacing (RR) ppage 0
+handlePageFault: replacing page 60 in slot 0
+handlePageFault: old page is dirty
+accessVM(1, 0) at timestamp 258
+virtual page 0
+location 0
+accessVM(2, 0) at timestamp 259
+virtual page 0
+location 0
+accessVM(3, 0) at timestamp 260
+virtual page 0
+location 0
+accessVM(4, 0) at timestamp 261
+virtual page 1
+location -1
+page fault for 4 (0)
+replacing (RR) ppage 1
+handlePageFault: replacing page 61 in slot 1
+handlePageFault: old page is dirty
+accessVM(5, 0) at timestamp 262
+virtual page 1
+location 1
+accessVM(6, 0) at timestamp 263
+virtual page 1
+location 1
+accessVM(7, 0) at timestamp 264
+virtual page 1
+location 1
+accessVM(8, 0) at timestamp 265
+virtual page 2
+location -1
+page fault for 8 (0)
+replacing (RR) ppage 2
+handlePageFault: replacing page 62 in slot 2
+handlePageFault: old page is dirty
+accessVM(9, 0) at timestamp 266
+virtual page 2
+location 2
+accessVM(10, 0) at timestamp 267
+virtual page 2
+location 2
+accessVM(11, 0) at timestamp 268
+virtual page 2
+location 2
+accessVM(12, 0) at timestamp 269
+virtual page 3
+location -1
+page fault for 12 (0)
+replacing (RR) ppage 3
+handlePageFault: replacing page 63 in slot 3
+handlePageFault: old page is dirty
+accessVM(13, 0) at timestamp 270
+virtual page 3
+location 3
+accessVM(14, 0) at timestamp 271
+virtual page 3
+location 3
+accessVM(15, 0) at timestamp 272
+virtual page 3
+location 3
+accessVM(16, 0) at timestamp 273
+virtual page 4
+location -1
+page fault for 16 (0)
+replacing (RR) ppage 0
+handlePageFault: replacing page 0 in slot 0
+accessVM(17, 0) at timestamp 274
+virtual page 4
+location 0
+accessVM(18, 0) at timestamp 275
+virtual page 4
+location 0
+accessVM(19, 0) at timestamp 276
+virtual page 4
+location 0
+accessVM(20, 0) at timestamp 277
+virtual page 5
+location -1
+page fault for 20 (0)
+replacing (RR) ppage 1
+handlePageFault: replacing page 1 in slot 1
+accessVM(21, 0) at timestamp 278
+virtual page 5
+location 1
+accessVM(22, 0) at timestamp 279
+virtual page 5
+location 1
+accessVM(23, 0) at timestamp 280
+virtual page 5
+location 1
+accessVM(24, 0) at timestamp 281
+virtual page 6
+location -1
+page fault for 24 (0)
+replacing (RR) ppage 2
+handlePageFault: replacing page 2 in slot 2
+accessVM(25, 0) at timestamp 282
+virtual page 6
+location 2
+accessVM(26, 0) at timestamp 283
+virtual page 6
+location 2
+accessVM(27, 0) at timestamp 284
+virtual page 6
+location 2
+accessVM(28, 0) at timestamp 285
+virtual page 7
+location -1
+page fault for 28 (0)
+replacing (RR) ppage 3
+handlePageFault: replacing page 3 in slot 3
+accessVM(29, 0) at timestamp 286
+virtual page 7
+location 3
+accessVM(30, 0) at timestamp 287
+virtual page 7
+location 3
+accessVM(31, 0) at timestamp 288
+virtual page 7
+location 3
+accessVM(32, 0) at timestamp 289
+virtual page 8
+location -1
+page fault for 32 (0)
+replacing (RR) ppage 0
+handlePageFault: replacing page 4 in slot 0
+accessVM(33, 0) at timestamp 290
+virtual page 8
+location 0
+accessVM(34, 0) at timestamp 291
+virtual page 8
+location 0
+accessVM(35, 0) at timestamp 292
+virtual page 8
+location 0
+accessVM(36, 0) at timestamp 293
+virtual page 9
+location -1
+page fault for 36 (0)
+replacing (RR) ppage 1
+handlePageFault: replacing page 5 in slot 1
+accessVM(37, 0) at timestamp 294
+virtual page 9
+location 1
+accessVM(38, 0) at timestamp 295
+virtual page 9
+location 1
+accessVM(39, 0) at timestamp 296
+virtual page 9
+location 1
+accessVM(40, 0) at timestamp 297
+virtual page 10
+location -1
+page fault for 40 (0)
+replacing (RR) ppage 2
+handlePageFault: replacing page 6 in slot 2
+accessVM(41, 0) at timestamp 298
+virtual page 10
+location 2
+accessVM(42, 0) at timestamp 299
+virtual page 10
+location 2
+accessVM(43, 0) at timestamp 300
+virtual page 10
+location 2
+accessVM(44, 0) at timestamp 301
+virtual page 11
+location -1
+page fault for 44 (0)
+replacing (RR) ppage 3
+handlePageFault: replacing page 7 in slot 3
+accessVM(45, 0) at timestamp 302
+virtual page 11
+location 3
+accessVM(46, 0) at timestamp 303
+virtual page 11
+location 3
+accessVM(47, 0) at timestamp 304
+virtual page 11
+location 3
+accessVM(48, 0) at timestamp 305
+virtual page 12
+location -1
+page fault for 48 (0)
+replacing (RR) ppage 0
+handlePageFault: replacing page 8 in slot 0
+accessVM(49, 0) at timestamp 306
+virtual page 12
+location 0
+accessVM(50, 0) at timestamp 307
+virtual page 12
+location 0
+accessVM(51, 0) at timestamp 308
+virtual page 12
+location 0
+accessVM(52, 0) at timestamp 309
+virtual page 13
+location -1
+page fault for 52 (0)
+replacing (RR) ppage 1
+handlePageFault: replacing page 9 in slot 1
+accessVM(53, 0) at timestamp 310
+virtual page 13
+location 1
+accessVM(54, 0) at timestamp 311
+virtual page 13
+location 1
+accessVM(55, 0) at timestamp 312
+virtual page 13
+location 1
+accessVM(56, 0) at timestamp 313
+virtual page 14
+location -1
+page fault for 56 (0)
+replacing (RR) ppage 2
+handlePageFault: replacing page 10 in slot 2
+accessVM(57, 0) at timestamp 314
+virtual page 14
+location 2
+accessVM(58, 0) at timestamp 315
+virtual page 14
+location 2
+accessVM(59, 0) at timestamp 316
+virtual page 14
+location 2
+accessVM(60, 0) at timestamp 317
+virtual page 15
+location -1
+page fault for 60 (0)
+replacing (RR) ppage 3
+handlePageFault: replacing page 11 in slot 3
+accessVM(61, 0) at timestamp 318
+virtual page 15
+location 3
+accessVM(62, 0) at timestamp 319
+virtual page 15
+location 3
+accessVM(63, 0) at timestamp 320
+virtual page 15
+location 3
+accessVM(64, 0) at timestamp 321
+virtual page 16
+location -1
+page fault for 64 (0)
+replacing (RR) ppage 0
+handlePageFault: replacing page 12 in slot 0
+accessVM(65, 0) at timestamp 322
+virtual page 16
+location 0
+accessVM(66, 0) at timestamp 323
+virtual page 16
+location 0
+accessVM(67, 0) at timestamp 324
+virtual page 16
+location 0
+accessVM(68, 0) at timestamp 325
+virtual page 17
+location -1
+page fault for 68 (0)
+replacing (RR) ppage 1
+handlePageFault: replacing page 13 in slot 1
+accessVM(69, 0) at timestamp 326
+virtual page 17
+location 1
+accessVM(70, 0) at timestamp 327
+virtual page 17
+location 1
+accessVM(71, 0) at timestamp 328
+virtual page 17
+location 1
+accessVM(72, 0) at timestamp 329
+virtual page 18
+location -1
+page fault for 72 (0)
+replacing (RR) ppage 2
+handlePageFault: replacing page 14 in slot 2
+accessVM(73, 0) at timestamp 330
+virtual page 18
+location 2
+accessVM(74, 0) at timestamp 331
+virtual page 18
+location 2
+accessVM(75, 0) at timestamp 332
+virtual page 18
+location 2
+accessVM(76, 0) at timestamp 333
+virtual page 19
+location -1
+page fault for 76 (0)
+replacing (RR) ppage 3
+handlePageFault: replacing page 15 in slot 3
+accessVM(77, 0) at timestamp 334
+virtual page 19
+location 3
+accessVM(78, 0) at timestamp 335
+virtual page 19
+location 3
+accessVM(79, 0) at timestamp 336
+virtual page 19
+location 3
+accessVM(80, 0) at timestamp 337
+virtual page 20
+location -1
+page fault for 80 (0)
+replacing (RR) ppage 0
+handlePageFault: replacing page 16 in slot 0
+accessVM(81, 0) at timestamp 338
+virtual page 20
+location 0
+accessVM(82, 0) at timestamp 339
+virtual page 20
+location 0
+accessVM(83, 0) at timestamp 340
+virtual page 20
+location 0
+accessVM(84, 0) at timestamp 341
+virtual page 21
+location -1
+page fault for 84 (0)
+replacing (RR) ppage 1
+handlePageFault: replacing page 17 in slot 1
+accessVM(85, 0) at timestamp 342
+virtual page 21
+location 1
+accessVM(86, 0) at timestamp 343
+virtual page 21
+location 1
+accessVM(87, 0) at timestamp 344
+virtual page 21
+location 1
+accessVM(88, 0) at timestamp 345
+virtual page 22
+location -1
+page fault for 88 (0)
+replacing (RR) ppage 2
+handlePageFault: replacing page 18 in slot 2
+accessVM(89, 0) at timestamp 346
+virtual page 22
+location 2
+accessVM(90, 0) at timestamp 347
+virtual page 22
+location 2
+accessVM(91, 0) at timestamp 348
+virtual page 22
+location 2
+accessVM(92, 0) at timestamp 349
+virtual page 23
+location -1
+page fault for 92 (0)
+replacing (RR) ppage 3
+handlePageFault: replacing page 19 in slot 3
+accessVM(93, 0) at timestamp 350
+virtual page 23
+location 3
+accessVM(94, 0) at timestamp 351
+virtual page 23
+location 3
+accessVM(95, 0) at timestamp 352
+virtual page 23
+location 3
+accessVM(96, 0) at timestamp 353
+virtual page 24
+location -1
+page fault for 96 (0)
+replacing (RR) ppage 0
+handlePageFault: replacing page 20 in slot 0
+accessVM(97, 0) at timestamp 354
+virtual page 24
+location 0
+accessVM(98, 0) at timestamp 355
+virtual page 24
+location 0
+accessVM(99, 0) at timestamp 356
+virtual page 24
+location 0
+accessVM(100, 0) at timestamp 357
+virtual page 25
+location -1
+page fault for 100 (0)
+replacing (RR) ppage 1
+handlePageFault: replacing page 21 in slot 1
+accessVM(101, 0) at timestamp 358
+virtual page 25
+location 1
+accessVM(102, 0) at timestamp 359
+virtual page 25
+location 1
+accessVM(103, 0) at timestamp 360
+virtual page 25
+location 1
+accessVM(104, 0) at timestamp 361
+virtual page 26
+location -1
+page fault for 104 (0)
+replacing (RR) ppage 2
+handlePageFault: replacing page 22 in slot 2
+accessVM(105, 0) at timestamp 362
+virtual page 26
+location 2
+accessVM(106, 0) at timestamp 363
+virtual page 26
+location 2
+accessVM(107, 0) at timestamp 364
+virtual page 26
+location 2
+accessVM(108, 0) at timestamp 365
+virtual page 27
+location -1
+page fault for 108 (0)
+replacing (RR) ppage 3
+handlePageFault: replacing page 23 in slot 3
+accessVM(109, 0) at timestamp 366
+virtual page 27
+location 3
+accessVM(110, 0) at timestamp 367
+virtual page 27
+location 3
+accessVM(111, 0) at timestamp 368
+virtual page 27
+location 3
+accessVM(112, 0) at timestamp 369
+virtual page 28
+location -1
+page fault for 112 (0)
+replacing (RR) ppage 0
+handlePageFault: replacing page 24 in slot 0
+accessVM(113, 0) at timestamp 370
+virtual page 28
+location 0
+accessVM(114, 0) at timestamp 371
+virtual page 28
+location 0
+accessVM(115, 0) at timestamp 372
+virtual page 28
+location 0
+accessVM(116, 0) at timestamp 373
+virtual page 29
+location -1
+page fault for 116 (0)
+replacing (RR) ppage 1
+handlePageFault: replacing page 25 in slot 1
+accessVM(117, 0) at timestamp 374
+virtual page 29
+location 1
+accessVM(118, 0) at timestamp 375
+virtual page 29
+location 1
+accessVM(119, 0) at timestamp 376
+virtual page 29
+location 1
+accessVM(120, 0) at timestamp 377
+virtual page 30
+location -1
+page fault for 120 (0)
+replacing (RR) ppage 2
+handlePageFault: replacing page 26 in slot 2
+accessVM(121, 0) at timestamp 378
+virtual page 30
+location 2
+accessVM(122, 0) at timestamp 379
+virtual page 30
+location 2
+accessVM(123, 0) at timestamp 380
+virtual page 30
+location 2
+accessVM(124, 0) at timestamp 381
+virtual page 31
+location -1
+page fault for 124 (0)
+replacing (RR) ppage 3
+handlePageFault: replacing page 27 in slot 3
+accessVM(125, 0) at timestamp 382
+virtual page 31
+location 3
+accessVM(126, 0) at timestamp 383
+virtual page 31
+location 3
+accessVM(127, 0) at timestamp 384
+virtual page 31
+location 3
+accessVM(128, 0) at timestamp 385
+virtual page 32
+location -1
+page fault for 128 (0)
+replacing (RR) ppage 0
+handlePageFault: replacing page 28 in slot 0
+accessVM(129, 0) at timestamp 386
+virtual page 32
+location 0
+accessVM(130, 0) at timestamp 387
+virtual page 32
+location 0
+accessVM(131, 0) at timestamp 388
+virtual page 32
+location 0
+accessVM(132, 0) at timestamp 389
+virtual page 33
+location -1
+page fault for 132 (0)
+replacing (RR) ppage 1
+handlePageFault: replacing page 29 in slot 1
+accessVM(133, 0) at timestamp 390
+virtual page 33
+location 1
+accessVM(134, 0) at timestamp 391
+virtual page 33
+location 1
+accessVM(135, 0) at timestamp 392
+virtual page 33
+location 1
+accessVM(136, 0) at timestamp 393
+virtual page 34
+location -1
+page fault for 136 (0)
+replacing (RR) ppage 2
+handlePageFault: replacing page 30 in slot 2
+accessVM(137, 0) at timestamp 394
+virtual page 34
+location 2
+accessVM(138, 0) at timestamp 395
+virtual page 34
+location 2
+accessVM(139, 0) at timestamp 396
+virtual page 34
+location 2
+accessVM(140, 0) at timestamp 397
+virtual page 35
+location -1
+page fault for 140 (0)
+replacing (RR) ppage 3
+handlePageFault: replacing page 31 in slot 3
+accessVM(141, 0) at timestamp 398
+virtual page 35
+location 3
+accessVM(142, 0) at timestamp 399
+virtual page 35
+location 3
+accessVM(143, 0) at timestamp 400
+virtual page 35
+location 3
+accessVM(144, 0) at timestamp 401
+virtual page 36
+location -1
+page fault for 144 (0)
+replacing (RR) ppage 0
+handlePageFault: replacing page 32 in slot 0
+accessVM(145, 0) at timestamp 402
+virtual page 36
+location 0
+accessVM(146, 0) at timestamp 403
+virtual page 36
+location 0
+accessVM(147, 0) at timestamp 404
+virtual page 36
+location 0
+accessVM(148, 0) at timestamp 405
+virtual page 37
+location -1
+page fault for 148 (0)
+replacing (RR) ppage 1
+handlePageFault: replacing page 33 in slot 1
+accessVM(149, 0) at timestamp 406
+virtual page 37
+location 1
+accessVM(150, 0) at timestamp 407
+virtual page 37
+location 1
+accessVM(151, 0) at timestamp 408
+virtual page 37
+location 1
+accessVM(152, 0) at timestamp 409
+virtual page 38
+location -1
+page fault for 152 (0)
+replacing (RR) ppage 2
+handlePageFault: replacing page 34 in slot 2
+accessVM(153, 0) at timestamp 410
+virtual page 38
+location 2
+accessVM(154, 0) at timestamp 411
+virtual page 38
+location 2
+accessVM(155, 0) at timestamp 412
+virtual page 38
+location 2
+accessVM(156, 0) at timestamp 413
+virtual page 39
+location -1
+page fault for 156 (0)
+replacing (RR) ppage 3
+handlePageFault: replacing page 35 in slot 3
+accessVM(157, 0) at timestamp 414
+virtual page 39
+location 3
+accessVM(158, 0) at timestamp 415
+virtual page 39
+location 3
+accessVM(159, 0) at timestamp 416
+virtual page 39
+location 3
+accessVM(160, 0) at timestamp 417
+virtual page 40
+location -1
+page fault for 160 (0)
+replacing (RR) ppage 0
+handlePageFault: replacing page 36 in slot 0
+accessVM(161, 0) at timestamp 418
+virtual page 40
+location 0
+accessVM(162, 0) at timestamp 419
+virtual page 40
+location 0
+accessVM(163, 0) at timestamp 420
+virtual page 40
+location 0
+accessVM(164, 0) at timestamp 421
+virtual page 41
+location -1
+page fault for 164 (0)
+replacing (RR) ppage 1
+handlePageFault: replacing page 37 in slot 1
+accessVM(165, 0) at timestamp 422
+virtual page 41
+location 1
+accessVM(166, 0) at timestamp 423
+virtual page 41
+location 1
+accessVM(167, 0) at timestamp 424
+virtual page 41
+location 1
+accessVM(168, 0) at timestamp 425
+virtual page 42
+location -1
+page fault for 168 (0)
+replacing (RR) ppage 2
+handlePageFault: replacing page 38 in slot 2
+accessVM(169, 0) at timestamp 426
+virtual page 42
+location 2
+accessVM(170, 0) at timestamp 427
+virtual page 42
+location 2
+accessVM(171, 0) at timestamp 428
+virtual page 42
+location 2
+accessVM(172, 0) at timestamp 429
+virtual page 43
+location -1
+page fault for 172 (0)
+replacing (RR) ppage 3
+handlePageFault: replacing page 39 in slot 3
+accessVM(173, 0) at timestamp 430
+virtual page 43
+location 3
+accessVM(174, 0) at timestamp 431
+virtual page 43
+location 3
+accessVM(175, 0) at timestamp 432
+virtual page 43
+location 3
+accessVM(176, 0) at timestamp 433
+virtual page 44
+location -1
+page fault for 176 (0)
+replacing (RR) ppage 0
+handlePageFault: replacing page 40 in slot 0
+accessVM(177, 0) at timestamp 434
+virtual page 44
+location 0
+accessVM(178, 0) at timestamp 435
+virtual page 44
+location 0
+accessVM(179, 0) at timestamp 436
+virtual page 44
+location 0
+accessVM(180, 0) at timestamp 437
+virtual page 45
+location -1
+page fault for 180 (0)
+replacing (RR) ppage 1
+handlePageFault: replacing page 41 in slot 1
+accessVM(181, 0) at timestamp 438
+virtual page 45
+location 1
+accessVM(182, 0) at timestamp 439
+virtual page 45
+location 1
+accessVM(183, 0) at timestamp 440
+virtual page 45
+location 1
+accessVM(184, 0) at timestamp 441
+virtual page 46
+location -1
+page fault for 184 (0)
+replacing (RR) ppage 2
+handlePageFault: replacing page 42 in slot 2
+accessVM(185, 0) at timestamp 442
+virtual page 46
+location 2
+accessVM(186, 0) at timestamp 443
+virtual page 46
+location 2
+accessVM(187, 0) at timestamp 444
+virtual page 46
+location 2
+accessVM(188, 0) at timestamp 445
+virtual page 47
+location -1
+page fault for 188 (0)
+replacing (RR) ppage 3
+handlePageFault: replacing page 43 in slot 3
+accessVM(189, 0) at timestamp 446
+virtual page 47
+location 3
+accessVM(190, 0) at timestamp 447
+virtual page 47
+location 3
+accessVM(191, 0) at timestamp 448
+virtual page 47
+location 3
+accessVM(192, 0) at timestamp 449
+virtual page 48
+location -1
+page fault for 192 (0)
+replacing (RR) ppage 0
+handlePageFault: replacing page 44 in slot 0
+accessVM(193, 0) at timestamp 450
+virtual page 48
+location 0
+accessVM(194, 0) at timestamp 451
+virtual page 48
+location 0
+accessVM(195, 0) at timestamp 452
+virtual page 48
+location 0
+accessVM(196, 0) at timestamp 453
+virtual page 49
+location -1
+page fault for 196 (0)
+replacing (RR) ppage 1
+handlePageFault: replacing page 45 in slot 1
+accessVM(197, 0) at timestamp 454
+virtual page 49
+location 1
+accessVM(198, 0) at timestamp 455
+virtual page 49
+location 1
+accessVM(199, 0) at timestamp 456
+virtual page 49
+location 1
+accessVM(200, 0) at timestamp 457
+virtual page 50
+location -1
+page fault for 200 (0)
+replacing (RR) ppage 2
+handlePageFault: replacing page 46 in slot 2
+accessVM(201, 0) at timestamp 458
+virtual page 50
+location 2
+accessVM(202, 0) at timestamp 459
+virtual page 50
+location 2
+accessVM(203, 0) at timestamp 460
+virtual page 50
+location 2
+accessVM(204, 0) at timestamp 461
+virtual page 51
+location -1
+page fault for 204 (0)
+replacing (RR) ppage 3
+handlePageFault: replacing page 47 in slot 3
+accessVM(205, 0) at timestamp 462
+virtual page 51
+location 3
+accessVM(206, 0) at timestamp 463
+virtual page 51
+location 3
+accessVM(207, 0) at timestamp 464
+virtual page 51
+location 3
+accessVM(208, 0) at timestamp 465
+virtual page 52
+location -1
+page fault for 208 (0)
+replacing (RR) ppage 0
+handlePageFault: replacing page 48 in slot 0
+accessVM(209, 0) at timestamp 466
+virtual page 52
+location 0
+accessVM(210, 0) at timestamp 467
+virtual page 52
+location 0
+accessVM(211, 0) at timestamp 468
+virtual page 52
+location 0
+accessVM(212, 0) at timestamp 469
+virtual page 53
+location -1
+page fault for 212 (0)
+replacing (RR) ppage 1
+handlePageFault: replacing page 49 in slot 1
+accessVM(213, 0) at timestamp 470
+virtual page 53
+location 1
+accessVM(214, 0) at timestamp 471
+virtual page 53
+location 1
+accessVM(215, 0) at timestamp 472
+virtual page 53
+location 1
+accessVM(216, 0) at timestamp 473
+virtual page 54
+location -1
+page fault for 216 (0)
+replacing (RR) ppage 2
+handlePageFault: replacing page 50 in slot 2
+accessVM(217, 0) at timestamp 474
+virtual page 54
+location 2
+accessVM(218, 0) at timestamp 475
+virtual page 54
+location 2
+accessVM(219, 0) at timestamp 476
+virtual page 54
+location 2
+accessVM(220, 0) at timestamp 477
+virtual page 55
+location -1
+page fault for 220 (0)
+replacing (RR) ppage 3
+handlePageFault: replacing page 51 in slot 3
+accessVM(221, 0) at timestamp 478
+virtual page 55
+location 3
+accessVM(222, 0) at timestamp 479
+virtual page 55
+location 3
+accessVM(223, 0) at timestamp 480
+virtual page 55
+location 3
+accessVM(224, 0) at timestamp 481
+virtual page 56
+location -1
+page fault for 224 (0)
+replacing (RR) ppage 0
+handlePageFault: replacing page 52 in slot 0
+accessVM(225, 0) at timestamp 482
+virtual page 56
+location 0
+accessVM(226, 0) at timestamp 483
+virtual page 56
+location 0
+accessVM(227, 0) at timestamp 484
+virtual page 56
+location 0
+accessVM(228, 0) at timestamp 485
+virtual page 57
+location -1
+page fault for 228 (0)
+replacing (RR) ppage 1
+handlePageFault: replacing page 53 in slot 1
+accessVM(229, 0) at timestamp 486
+virtual page 57
+location 1
+accessVM(230, 0) at timestamp 487
+virtual page 57
+location 1
+accessVM(231, 0) at timestamp 488
+virtual page 57
+location 1
+accessVM(232, 0) at timestamp 489
+virtual page 58
+location -1
+page fault for 232 (0)
+replacing (RR) ppage 2
+handlePageFault: replacing page 54 in slot 2
+accessVM(233, 0) at timestamp 490
+virtual page 58
+location 2
+accessVM(234, 0) at timestamp 491
+virtual page 58
+location 2
+accessVM(235, 0) at timestamp 492
+virtual page 58
+location 2
+accessVM(236, 0) at timestamp 493
+virtual page 59
+location -1
+page fault for 236 (0)
+replacing (RR) ppage 3
+handlePageFault: replacing page 55 in slot 3
+accessVM(237, 0) at timestamp 494
+virtual page 59
+location 3
+accessVM(238, 0) at timestamp 495
+virtual page 59
+location 3
+accessVM(239, 0) at timestamp 496
+virtual page 59
+location 3
+accessVM(240, 0) at timestamp 497
+virtual page 60
+location -1
+page fault for 240 (0)
+replacing (RR) ppage 0
+handlePageFault: replacing page 56 in slot 0
+accessVM(241, 0) at timestamp 498
+virtual page 60
+location 0
+accessVM(242, 0) at timestamp 499
+virtual page 60
+location 0
+accessVM(243, 0) at timestamp 500
+virtual page 60
+location 0
+accessVM(244, 0) at timestamp 501
+virtual page 61
+location -1
+page fault for 244 (0)
+replacing (RR) ppage 1
+handlePageFault: replacing page 57 in slot 1
+accessVM(245, 0) at timestamp 502
+virtual page 61
+location 1
+accessVM(246, 0) at timestamp 503
+virtual page 61
+location 1
+accessVM(247, 0) at timestamp 504
+virtual page 61
+location 1
+accessVM(248, 0) at timestamp 505
+virtual page 62
+location -1
+page fault for 248 (0)
+replacing (RR) ppage 2
+handlePageFault: replacing page 58 in slot 2
+accessVM(249, 0) at timestamp 506
+virtual page 62
+location 2
+accessVM(250, 0) at timestamp 507
+virtual page 62
+location 2
+accessVM(251, 0) at timestamp 508
+virtual page 62
+location 2
+accessVM(252, 0) at timestamp 509
+virtual page 63
+location -1
+page fault for 252 (0)
+replacing (RR) ppage 3
+handlePageFault: replacing page 59 in slot 3
+accessVM(253, 0) at timestamp 510
+virtual page 63
+location 3
+accessVM(254, 0) at timestamp 511
+virtual page 63
+location 3
+accessVM(255, 0) at timestamp 512
+virtual page 63
+location 3
+
+sum is 32640 (should be 32640)
+
+Number of page faults: 124
+Number of disk writes: 64
+

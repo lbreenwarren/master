@@ -1,6 +1,6 @@
 //
 //
-// main.c - main routine for asx20 assembler
+// main.c - main routine for cs520 assembler
 //
 //          Usage: asx20 file.asm
 //
@@ -76,7 +76,7 @@ int main(int argc, char *argv[])
     exit(1);
   }
 
-  // name the output file, only required for the second  pass
+  // name the output file
   nameOutFile(argv[1], outn);
 
   // open the output file
@@ -90,10 +90,40 @@ int main(int argc, char *argv[])
   //   it will tell us how many errors were detected and therefore
   //   whether to continue with the second pass
   int errorCount = betweenPasses(outf);
-  if(errorCount);
-  fclose(outf);
+  if (errorCount + scanErrorCount + parseErrorCount)
+  {
+    // close output file that was not used
+    fclose(outf);
 
-  // we don't really go through pass 2 this time around only an empty object file is created
+    // remove the output file
+    if (unlink(outn))
+    {
+      bug("can't remove output file?");
+    }
+
+    error("assembler terminating after first pass with %d error(s)",
+      errorCount + scanErrorCount + parseErrorCount);
+    return errorCount + scanErrorCount + parseErrorCount;
+  }
+
+  // tell yacc again to start on line 1
+  yylineno = 1;
+
+  // re-open the file
+  if (!(yyin = fopen(argv[1],"r")))
+  {
+    fprintf(stderr, "can't open input file for second pass\n");
+    exit(1);
+  }
+
+  // invoke parser to drive the second pass
+  yyparse();
+
+
+  // close the files
+  fclose(outf);
+  fclose(yyin);
+
   return 0;
 }
 
@@ -126,4 +156,3 @@ void nameOutFile(char *inName, char *outName)
     strcat(outName,".obj");
   }
 }
-

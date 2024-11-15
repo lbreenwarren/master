@@ -131,10 +131,12 @@ int format9_opcodes[] = {
     0x1B,   //alloc
 };
 
-
-
 //Symbol Table Size
 #define TABLE_SIZE 50
+
+//Output File reference to be obtained between passes
+//also used to indicate 1st or 2nd pass
+FILE* out = NULL;
 
 //error count
 int num_errs;
@@ -144,11 +146,12 @@ int pc;
 
 //Symbol Structure
 typedef struct {
-    int address;
-    int referenced;
-    int num_refs;
-    int exported;
-    int imported;
+    int address;    //address where the symbol was defined (-1 if not defined locally)
+    int referenced; //boolean indicating if the symbol was referenced
+    int num_refs;   //number of times referenced for outsymbols
+    int exported;   //boolean indicating if the symbol was exported
+    int imported;   //boolean indicating if the symbol was imported
+    void* import_ref; //pointer to another symbol structure containing the address of the insymbol reference
 } symbol;
 
 //symtab_handle pointer
@@ -178,6 +181,7 @@ static void *initSymbol() {
     new_symbol->imported = 0;
     new_symbol->referenced = 0;
     new_symbol->num_refs = 0;
+    new_symbol->import_ref = NULL;
     return new_symbol;
 }
 
@@ -286,14 +290,7 @@ static char* pass1_error_check(INSTR instr, char* label) {
 
             int constant = instr.u.format4.constant;
 
-            if (constant < 0) {
-                error(ERROR_CONSTANT_ZERO);
-                addr = NULL;
-                ++num_errs;
-                break;
-            }
-
-            if (constant > ((1 << 20) - 1)) {
+            if (constant < -524288 || constant > 524287) {
                 error(ERROR_CONSTANT_INVALID, constant); 
                 addr = NULL;
                 ++num_errs;
@@ -407,7 +404,7 @@ static char* pass1_error_check(INSTR instr, char* label) {
                 break;
             }
             
-            if (val > ((1 << 20) - 1)) {
+            if (val > 0xffffffff) {
                 error(ERROR_CONSTANT_INVALID, val); 
                 addr = NULL;
                 ++num_errs;
@@ -449,7 +446,7 @@ static void between_pass_error_check(symbol *next_symbol, const char *label) {
     }
 }
 
-static void le_write_word(unsigned int word, FILE *outf) {
+static void be_write_word(unsigned int word, FILE *outf) {
 
     for (int i = 0; i < 4; ++i) {
        
@@ -459,22 +456,44 @@ static void le_write_word(unsigned int word, FILE *outf) {
 
 }
 
-// this is the "guts" of the assembler and is called for each line
-// of the input that contains a label, instruction or directive
-//
-// note that there may be both a label and an instruction or directive
-// present on a line
-//
-// note that the assembler directives "export" and "import" have structure
-// identical to instructions with format 2, so that format is used for them
-//
-// for the directives "word" and "alloc" a special format, format 9, is used
-//
-// see defs.h for the details on how each instruction format is represented
-// in the INSTR struct.
-//
-void assemble(char *label, INSTR instr)
-{
+static void writeInsymbolToHeader(char* label, symbol *data, FILE *outf){
+    char *str = label;
+    while(*str != '\0') {
+        putc(*str, outf);
+        ++str;
+    }
+    for(int i=0; i < 16 - strlen(label); ++i) {
+        putc(0x0, outf);
+    }
+    unsigned int addr = data->address;
+    for (int i=0; i < 4; ++i) {
+        putc(addr & (0xff << (i * 8)), outf);
+    }
+}
+
+static void writeOutsymbolToHeader(char *label, symbol *data, FILE *outf) {
+    
+    data = (symbol*)data->import_ref;
+   
+    while (data != NULL) {
+        char *str = label;
+        while(*str != '\0') {
+            putc(*str, outf);
+            ++str;
+        }
+        for(int i=0; i < 16 - strlen(label); ++i) {
+            putc(0x0, outf);
+        }
+        unsigned int addr = data->address;
+        for (int i=0; i < 4; ++i) {
+            putc(addr & (0xff << (i * 8)), outf);
+        }
+        data = (symbol*)data->import_ref;
+    }
+}
+
+static void assembleFirstPass(char *label, INSTR instr) {
+    
     if (label) {
         
         symbol* label_symbol = symtabLookup(sym_tab, label);
@@ -535,6 +554,16 @@ void assemble(char *label, INSTR instr)
             } else {
                 instr_symbol->referenced = 1;
                 ++(instr_symbol->num_refs);
+                symbol *tmp = instr_symbol;
+
+                while (tmp->import_ref != NULL) {
+                    tmp = (symbol *)tmp->import_ref;
+                } 
+                
+                tmp->import_ref = initSymbol();
+                symbol *ptr = (symbol*) tmp->import_ref;
+                ptr->address = pc;
+            
                 ++pc;
             }
             
@@ -543,6 +572,229 @@ void assemble(char *label, INSTR instr)
         } else {
             ++pc;
         }
+    }
+}
+
+static void writeFormat1ObjectCode(INSTR instr, char* label, int opcode) {
+    putc((opcode & 0xff), out);
+    for(int i = 0; i < 3; ++i) {
+        putc(0x0, out);
+    }
+}
+
+static void writeFormat2ObjectCode(INSTR instr, char* label, int opcode) {
+    int addr = 0;
+    symbol* target = symtabLookup(sym_tab, instr.u.format2.addr);
+   
+    if (target->imported) {
+        addr = 0;
+    } else {
+        addr = target->address - pc; 
+    }
+
+    if (addr < -524288 || addr > 524287) {
+        error(ERROR_LABEL_SIZE20, instr.u.format2.addr, target->address);
+    }
+    
+    int byte1 = (addr >> 12) & 0xff;
+    int byte2 = (addr >> 4) & 0xff;
+    int byte3 = addr & 0xf;
+    byte3 <<= 4;
+    putc((opcode & 0xff), out);
+    putc(byte3, out);
+    putc(byte2, out);
+    putc(byte1, out);
+    
+}
+
+static void writeFormat3ObjectCode(INSTR instr, char* label, int opcode) {
+    putc((opcode & 0xff), out);
+    putc(instr.u.format3.reg & 0xf, out);
+    putc(0x0, out);
+    putc(0x0, out);    
+}
+
+static void writeFormat4ObjectCode(INSTR instr, char* label, int opcode) {
+    int constant = instr.u.format4.constant;
+    int byte1 = (constant >> 12) & 0xff;
+    int byte2 = (constant >> 4) & 0xff;
+    int byte3 = constant & 0xf;
+    byte3 <<= 4;
+    byte3 |= ((instr.u.format4.reg & 0xf));
+    putc((opcode & 0xff), out);
+    putc(byte3, out);
+    putc(byte2, out);
+    putc(byte1, out);
+    
+}
+
+static void writeFormat5ObjectCode(INSTR instr, char* label, int opcode) {
+    int addr = -1;
+    symbol* target = symtabLookup(sym_tab, instr.u.format5.addr);
+   
+    if (target->imported) {
+        addr = 0;
+    } else {
+        addr = target->address - pc; 
+    }
+
+    if (addr < -524288 || addr > 524287) {
+        error(ERROR_LABEL_SIZE20, instr.u.format5.addr, target->address);
+    }
+    
+    int byte1 = (addr >> 12) & 0xff;
+    int byte2 = (addr >> 4) & 0xff;
+    int byte3 = addr & 0xf;
+    byte3 <<= 4;
+    byte3 = (byte3 | (instr.u.format5.reg & 0xf));
+    putc((opcode & 0xff), out);
+    putc(byte3, out);
+    putc(byte2, out);
+    putc(byte1, out);
+    
+}
+
+static void writeFormat6ObjectCode(INSTR instr, char* label, int opcode) {
+    
+    int byte = instr.u.format6.reg1;
+    byte |= (instr.u.format6.reg2 << 4);
+    putc((opcode & 0xff), out);
+    putc(byte, out); 
+    putc(0x0, out);
+    putc(0x0, out);
+}
+
+static void writeFormat7ObjectCode(INSTR instr, char* label, int opcode) {
+    putc((opcode & 0xff), out);
+    int byte = instr.u.format7.reg1;
+    byte |= (instr.u.format7.reg2 << 4);
+    putc(byte, out);
+    int offset = instr.u.format7.offset;
+    putc(offset & 0xff, out);
+    putc((offset >> 8) & 0xff, out);
+   
+}
+
+static void writeFormat8ObjectCode(INSTR instr, char* label, int opcode) {
+    int addr = -1;
+    symbol* target = symtabLookup(sym_tab, instr.u.format5.addr);
+   
+    if (target->imported) {
+        addr = 0;
+    } else {
+        addr = target->address - pc; 
+    }
+
+    if (addr < -32768 || addr > 32768) {
+        error(ERROR_LABEL_SIZE20, instr.u.format5.addr, target->address);
+    }
+    putc((opcode & 0xff), out);
+    int byte = instr.u.format8.reg1;
+    byte |= (instr.u.format8.reg2 << 4);
+    putc(byte,out);
+    putc(addr & 0xff, out);
+    putc((addr >> 8) & 0xff, out);
+    
+    
+}
+
+static void writeFormat9ObjectCode(INSTR instr, char* label, int opcode) {
+    if (strcmp(instr.opcode, "word") == 0) {
+
+        for(int i = 0; i < 4; ++i) {
+            putc((instr.u.format9.constant >> (i * 8)) & 0xff, out);
+        }
+    }
+    if (strcmp(instr.opcode, "alloc") == 0) {
+        
+        for(int i = 0; i < instr.u.format9.constant; ++i) {
+            for(int i = 0; i < 4; ++i) {
+                putc(0x0, out);
+            }
+        }
+    }
+}
+
+static void assembleSecondPass(char* label, INSTR instr) {
+    
+    int opcode = -1;
+    
+    for (int i = 0; i < 30; ++i) {
+        if ((instr.format != 0) && (strcmp(vmx20_instructions[i], instr.opcode) == 0)) {
+            opcode = i;
+            break;
+        }
+    }
+    switch(instr.format) {
+        case 1:
+            ++pc;
+            writeFormat1ObjectCode(instr, label, opcode);
+            break;
+        case 2:
+            if ((strcmp(instr.opcode, "import") == 0) || (strcmp(instr.opcode, "export") == 0)){
+                break;
+            }
+            ++pc;
+            writeFormat2ObjectCode(instr, label, opcode);
+            break;
+        case 3:
+            ++pc;
+            writeFormat3ObjectCode(instr, label, opcode);
+            break;
+        case 4:
+            ++pc;
+            writeFormat4ObjectCode(instr, label, opcode);
+            break;
+        case 5:
+            ++pc;
+            writeFormat5ObjectCode(instr, label, opcode);
+            break;
+        case 6:
+            ++pc;
+            writeFormat6ObjectCode(instr, label, opcode);
+            break;
+        case 7:
+            ++pc;
+            writeFormat7ObjectCode(instr, label, opcode);
+            break;
+        case 8:
+            ++pc;
+            writeFormat8ObjectCode(instr, label, opcode);
+            break;
+        case 9:
+            if (strcmp(instr.opcode, "alloc") == 0) {
+                pc += instr.u.format9.constant;
+            } else {
+                ++pc;
+            }
+            writeFormat9ObjectCode(instr, label, opcode);
+            break;
+        default:
+            break;
+    }
+    
+}
+
+// this is the "guts" of the assembler and is called for each line
+// of the input that contains a label, instruction or directive
+//
+// note that there may be both a label and an instruction or directive
+// present on a line
+//
+// note that the assembler directives "export" and "import" have structure
+// identical to instructions with format 2, so that format is used for them
+//
+// for the directives "word" and "alloc" a special format, format 9, is used
+//
+// see defs.h for the details on how each instruction format is represented
+// in the INSTR struct.
+//
+void assemble(char *label, INSTR instr)
+{
+    if (out == NULL) {
+        assembleFirstPass(label, instr);
+    } else {
+        assembleSecondPass(label, instr);
     }
 
 
@@ -613,10 +865,14 @@ int betweenPasses(FILE *outf)
 
     void *it = symtabCreateIterator(sym_tab);
     void *data;
-    const char *label = symtabNext(it, &data);
+    char *label = (char*)symtabNext(it, &data);
 
-    int insymbols = 0;
-    int outsymbols = 0;
+    int num_insymbols = 0;
+    int num_outsymbols = 0;
+
+    char *out_symbols[TABLE_SIZE];
+    int num_imports = 0;
+    char *in_symbols[TABLE_SIZE];
 
     symbol *next_symbol = (symbol*)data;
     
@@ -633,27 +889,43 @@ int betweenPasses(FILE *outf)
         }
         if (next_symbol->exported > 0) {
             fprintf(stdout, " exported");
-            ++insymbols;
+            in_symbols[num_insymbols] = label;
+            ++num_insymbols;
         }
         if (next_symbol->imported > 0) {
             fprintf(stdout, " imported");
-            outsymbols += next_symbol->num_refs;
+            num_outsymbols += next_symbol->num_refs;
+            out_symbols[num_imports] = label;
+            ++num_imports;
         }
        
         fprintf(stdout, "\n");
-        label = symtabNext(it, &data);
+        label = (char*)symtabNext(it, &data);
         next_symbol = (symbol*)data;
     }
 
-    unsigned int insym_size = insymbols * 5;
-    unsigned int outsym_size = outsymbols * 5;
+    unsigned int insym_size = num_insymbols * 5;
+    unsigned int outsym_size = num_outsymbols * 5;
     unsigned int objcode_size = pc;
-    printf("in:%x, out:%x, obj:%x\n", insymbols, outsymbols, objcode_size);
-    le_write_word(insym_size, outf);
-    le_write_word(outsym_size, outf);
-    le_write_word(objcode_size, outf);
+    //printf("in:%x, out:%x, obj:%x\n", num_insymbols, num_outsymbols, objcode_size);
+    be_write_word(insym_size, outf);
+    be_write_word(outsym_size, outf);
+    be_write_word(objcode_size, outf);
+    
+    for (int i = 0; i < num_insymbols; ++i) {
+        void *data = symtabLookup(sym_tab, in_symbols[i]);
+        writeInsymbolToHeader(in_symbols[i], data, outf);
+    }
 
+    for (int i = 0; i < num_imports; ++i) {
+        symbol *data = (symbol *) symtabLookup(sym_tab, out_symbols[i]);
+        writeOutsymbolToHeader(out_symbols[i], (symbol *)data, outf);
+    }
+
+    out = outf;
+    pc = 0;
     return num_errs;
+
 #if DEBUG
   fprintf(stderr, "betweenPasses called\n");
 #endif

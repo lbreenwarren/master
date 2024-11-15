@@ -1,0 +1,52 @@
+Duration of program execution (in seconds): 30
+Student mean inter-arrival time (in seconds): 2
+Mean service time of barber (in seconds): 5
+Total waiting chairs plus barber chair: 6
+Simulation start time = 0
+Barber opens shop at time 0
+Customer 0 arrives at time 0
+Customer 1 arrives at time 0
+Customer 0 leaves barber shop at time 1
+Customer 2 arrives at time 2
+Customer 1 leaves barber shop at time 8
+Customer 3 arrives at time 10
+Customer 2 leaves barber shop at time 12
+Customer 4 arrives at time 12
+Customer 5 arrives at time 12
+Customer 6 arrives at time 12
+Customer 7 arrives at time 12
+Customer 8 arrives at time 13
+Customer 9 arrives at time 14
+Customer 9 leaves since no vacant seats
+Customer 10 arrives at time 15
+Customer 10 leaves since no vacant seats
+Customer 11 arrives at time 15
+Customer 11 leaves since no vacant seats
+Customer 12 arrives at time 16
+Customer 12 leaves since no vacant seats
+Customer 13 arrives at time 19
+Customer 13 leaves since no vacant seats
+Customer 3 leaves barber shop at time 20
+Customer 4 leaves barber shop at time 21
+Customer 14 arrives at time 23
+Customer 5 leaves barber shop at time 24
+Customer 15 arrives at time 24
+Customer 6 leaves barber shop at time 27
+Customer 16 arrives at time 27
+Customer 17 arrives at time 28
+Customer 18 arrives at time 28
+Customer 18 leaves since no vacant seats
+Customer 19 arrives at time 28
+Customer 19 leaves since no vacant seats
+Customer 20 arrives at time 29
+Customer 20 leaves since no vacant seats
+******************************************************
+Barber will not let in any new customers, but will service seated customers. 
+******************************************************
+Customer 7 leaves barber shop at time 34
+Customer 8 leaves barber shop at time 41
+Customer 14 leaves barber shop at time 41
+Customer 15 leaves barber shop at time 44
+Customer 16 leaves barber shop at time 51
+Customer 17 leaves barber shop at time 54
+Barber closes shop at time 54
