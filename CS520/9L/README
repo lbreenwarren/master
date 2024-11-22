@@ -1,0 +1,25 @@
+===========================
+        TEST DRIVER
+===========================
+
+Both tests need to be verified manually because printFramePointers doesn't return anything
+
+Test 1:
+    Step 1:
+        Call getFP from main to print the address and content of mains frame pointer
+    Step 2:
+        call printFramePointers to print the frame pointers and their content of each frame on the stack
+    Observable Results:
+        1. Because the caller of getFP in step 2 was printFramePointers, mains should be the second frame from the top. Verify that the first print has content equal to the address of main's frame pointer from step 1
+        2. Verify that the address and content of the second frame is equal to the address and content printed in step 1
+
+Test 2:
+    Step 1:
+        Set CALLS to the desired amount of frames to be put onto the stack
+    Step 2:
+        call printFramePointers from main to obtain the initial state of the stack
+    Step 3:
+        make CALLS recursive calls to testFunction which calls printFramePointers
+    Observable Results:
+        1. Verify that for each recursive call to testFunction the number of frames on the stack increments by 1
+        2. Verfy for each print of the stack a new frame is at the top, and has content equal to the frame pointer of the previous frame
