@@ -1,0 +1,122 @@
+8192
+A
+234 1
+A
+458 2
+A
+30 3
+D
+1
+P
+Memory size = 8192 bytes, allocated bytes = 488, free = 7704
+There're currently 2 holes and 2 processes:
+Hole list:
+hole 1: start location=0, size=234
+hole 2: start location=722, size=7470
+Process list:
+process 1: id=2, start location=234, size=458
+process 2: id=3, start location=692, size=30
+A
+890 4
+D
+3
+P
+Memory size = 8192 bytes, allocated bytes = 1348, free = 6844
+There're currently 3 holes and 2 processes:
+Hole list:
+hole 1: start location=0, size=234
+hole 2: start location=692, size=30
+hole 3: start location=1612, size=6580
+Process list:
+process 1: id=2, start location=234, size=458
+process 2: id=4, start location=722, size=890
+A
+70 5
+A
+30 6
+P
+Memory size = 8192 bytes, allocated bytes = 1448, free = 6744
+There're currently 3 holes and 4 processes:
+Hole list:
+hole 1: start location=100, size=134
+hole 2: start location=692, size=30
+hole 3: start location=1612, size=6580
+Process list:
+process 1: id=2, start location=234, size=458
+process 2: id=4, start location=722, size=890
+process 3: id=5, start location=0, size=70
+process 4: id=6, start location=70, size=30
+A
+6600 7
+Memory defragmentation.
+P
+Memory size = 8192 bytes, allocated bytes = 8048, free = 144
+There're currently 1 holes and 5 processes:
+Hole list:
+hole 1: start location=8048, size=144
+Process list:
+process 1: id=2, start location=0, size=458
+process 2: id=4, start location=458, size=890
+process 3: id=5, start location=1348, size=70
+process 4: id=6, start location=1418, size=30
+process 5: id=7, start location=1448, size=6600
+D
+2
+P
+Memory size = 8192 bytes, allocated bytes = 7590, free = 602
+There're currently 2 holes and 4 processes:
+Hole list:
+hole 1: start location=0, size=458
+hole 2: start location=8048, size=144
+Process list:
+process 1: id=4, start location=458, size=890
+process 2: id=5, start location=1348, size=70
+process 3: id=6, start location=1418, size=30
+process 4: id=7, start location=1448, size=6600
+D
+5
+P
+Memory size = 8192 bytes, allocated bytes = 7520, free = 672
+There're currently 3 holes and 3 processes:
+Hole list:
+hole 1: start location=0, size=458
+hole 2: start location=1348, size=70
+hole 3: start location=8048, size=144
+Process list:
+process 1: id=4, start location=458, size=890
+process 2: id=6, start location=1418, size=30
+process 3: id=7, start location=1448, size=6600
+D
+4
+P
+Memory size = 8192 bytes, allocated bytes = 6630, free = 1562
+There're currently 2 holes and 2 processes:
+Hole list:
+hole 1: start location=0, size=1418
+hole 2: start location=8048, size=144
+Process list:
+process 1: id=6, start location=1418, size=30
+process 2: id=7, start location=1448, size=6600
+A
+-50 8
+Process size should be positive.A
+8172 9
+Not enough memory space for process 9.
+A
+100 6
+Process with same pid(6) has already existed.
+A
+100 4
+D
+10
+Process with pid(10) does not exist.
+P
+Memory size = 8192 bytes, allocated bytes = 6730, free = 1462
+There're currently 2 holes and 3 processes:
+Hole list:
+hole 1: start location=100, size=1318
+hole 2: start location=8048, size=144
+Process list:
+process 1: id=4, start location=0, size=100
+process 2: id=6, start location=1418, size=30
+process 3: id=7, start location=1448, size=6600
